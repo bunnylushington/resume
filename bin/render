@@ -1,0 +1,65 @@
+#!/usr/bin/env perl
+
+use strict;
+use autodie;
+use feature qw[ :5.10 ];
+
+use Getopt::Long;
+use Pod::Usage;
+use FindBin;
+use Data::Dumper;
+
+use YAML;
+
+my ($help) = ();
+my $output = "$FindBin::Bin/../output";
+
+GetOptions("help" => \$help,
+           "output=s" => \$output);
+pod2usage if $help;
+
+my $input = shift or
+  pod2usage("No input file specified.");
+
+$input = -r "$input.yaml" ? "$input.yaml" :
+         -r "$input.yml"  ? "$input.yml"  : $input;
+
+-r $input or die "Could not read input file '$input'.\n";
+
+my $data = YAML::LoadFile($input);
+
+
+sub render_text {
+  my ($data, $output) = @_;
+}
+
+sub render_tex {
+  my ($data, $output) = @_;
+}
+
+sub render_html {
+  my ($data, $output) = @_;
+}
+
+
+__END__
+
+=head1 NAME
+
+render - generate output from input sources
+
+=head1 SYNOPSIS
+
+render [options] <input>
+
+Input must be specified and must be YAML parsable.  
+
+Options are:
+
+  --help - show this message
+  --output=<dir> - output directory, defaults to <resrender>/output
+
+=head1 AUTHOR
+
+  Kevin Montuori <montuori@gmail.com>
+  August 2013
