@@ -8,8 +8,10 @@ use Getopt::Long;
 use Pod::Usage;
 use FindBin;
 use Data::Dumper;
-
 use YAML;
+
+use lib "$FindBin::Bin/../lib";
+use ResRender;
 
 my ($help) = ();
 my $output = "$FindBin::Bin/../output";
@@ -27,19 +29,10 @@ $input = -r "$input.yaml" ? "$input.yaml" :
 -r $input or die "Could not read input file '$input'.\n";
 
 my $data = YAML::LoadFile($input);
+print Dumper $data;
+ResRender::Text->render($data, $output);
 
 
-sub render_text {
-  my ($data, $output) = @_;
-}
-
-sub render_tex {
-  my ($data, $output) = @_;
-}
-
-sub render_html {
-  my ($data, $output) = @_;
-}
 
 
 __END__

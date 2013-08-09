@@ -1,8 +1,59 @@
 ---
+format_options:
+  - none
+
 name: Kevin Montuori
 address: 
   - 33 Cornwall St., Jamaica Plain, MA, 02130
   - 2215 Burgundy St., New Orleans, LA, 70117
 email: montuori@gmail.com
 telephone: 617-398-7654
+
+experience:
+  
+  - company: Ascend Learning
+    location: Burlington, MA
+    start-date: May 2013
+    end-date: Present
+    title: Operations Architect
+
+  - company: Pearson
+    location: Boston, MA
+    start-date: August 2009
+    end-date: April 2013
+    title: Development Manager: Release Engineering and Physical Architecture
+
+  - company: Brandeis University
+    location: Waltham, MA
+    start-date: February 2006
+    end-date: June 2009
+    title: Technical Lead, Identity Management and Principal Release Engineer
+
+  - company: RiskMetrics Group
+    location: Cambridge, MA
+    start-date: May 2000
+    end-date: February 2006
+    title: Release Engineer and Systems Programmer
+
+  - company: Northeastern University
+    location: Boston, MA
+    start-date: May 1999
+    end-date: May 2000
+    title: Assistant Directory of Administrative Computer Services
+
+  - company: John Hancock Financial Services
+    location: Boston, MA
+    start-date: October 1996
+    end-date: May 1999
+    title: Internet Commerce Application Designer
+
+  - company: Northeastern University
+    location: Boston, MA
+    start-date: January 1995
+    end-date: October 1996
+
+
+
+  
+
 
