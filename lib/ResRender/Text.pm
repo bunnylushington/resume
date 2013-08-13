@@ -3,8 +3,12 @@ package ResRender::Text;
 use strict;
 use autodie;
 use feature qw[ :5.10 ];
+use Text::Wrap;
 
 use ResRender qw[ :all ];
+
+our $INIT_TAB = "   * ";
+our $SUBS_TAB = "     ";
 
 sub render {
   my (undef, $data, $output) = @_;
@@ -28,6 +32,14 @@ sub experience {
     my $dates = join " -- ", startdate($e), enddate($e);
     say $fh pushline(company($e), $dates);
     say $fh pushline(title($e), location($e));
+
+    if (showwork($e)) {
+      print $fh "\n";
+      for my $w (work($e)) {
+        say $fh Text::Wrap::fill($INIT_TAB, $SUBS_TAB, $w);
+        print $fh "\n";
+      }
+    }
 
     print $fh "\n";
   }

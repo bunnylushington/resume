@@ -42,7 +42,7 @@ sub addresses {
 
 sub experiences { 
   my $exp = shift->{experience};
-  @{ $exp }
+  @{ $exp };
 }
 
 sub location { shift->{location} }
@@ -50,8 +50,15 @@ sub title { shift->{title} }
 sub startdate { shift->{"start-date"} }
 sub enddate { shift->{"end-date"} }
 sub company { shift->{company} }
-sub showwork { shift->{showwork} }
-sub work {}
+sub showwork { 
+  my $val = lc(shift->{showwork});
+  ($val eq 'no' or $val eq 'false' or $val eq 0) ? 0 : 1;
+}
+
+sub work {
+  my $work = shift->{work};
+  map { chomp; $_ } ref $work eq 'ARRAY' ? @{ $work } : ($work);
+}
 
 1;
 
