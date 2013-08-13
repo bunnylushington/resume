@@ -11,7 +11,7 @@ use Data::Dumper;
 use YAML;
 
 use lib "$FindBin::Bin/../lib";
-use ResRender;
+use ResRender::Text;
 
 my ($help) = ();
 my $output = "$FindBin::Bin/../output";
@@ -29,7 +29,7 @@ $input = -r "$input.yaml" ? "$input.yaml" :
 -r $input or die "Could not read input file '$input'.\n";
 
 my $data = YAML::LoadFile($input);
-print Dumper $data;
+# print Dumper $data;
 ResRender::Text->render($data, $output);
 
 
