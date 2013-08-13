@@ -10,6 +10,14 @@ our @EXPORT_OK = qw[ show_work
                      phone
                      email
                      addresses
+                     experiences
+                     location
+                     title
+                     startdate
+                     enddate
+                     company
+                     showwork
+                     work
                   ];
 our %EXPORT_TAGS = ( all => \@EXPORT_OK );
 
@@ -26,11 +34,24 @@ sub filepath {
 sub name { shift->{name} }
 sub phone { shift->{telephone} }
 sub email { shift->{email} }
+
 sub addresses {
   my $add = shift->{address};
   (ref $add eq 'ARRAY') ? @{ $add } : ($add);
 }
 
+sub experiences { 
+  my $exp = shift->{experience};
+  @{ $exp }
+}
+
+sub location { shift->{location} }
+sub title { shift->{title} }
+sub startdate { shift->{"start-date"} }
+sub enddate { shift->{"end-date"} }
+sub company { shift->{company} }
+sub showwork { shift->{showwork} }
+sub work {}
 
 1;
 
