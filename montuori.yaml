@@ -10,6 +10,9 @@ address:
 email: montuori@gmail.com
 telephone: (617) 398-7654
 
+links:
+  - GitHub: https://github.com/kevinmontuori
+
 experience:
   
   - company: Ascend Learning
@@ -17,13 +20,49 @@ experience:
     start-date: May 2013
     end-date: Present
     title: Operations Architect
-    showwork: no
+    technology: >
+      Erlang (Nitrogen, erlhub, erlcloud), Perl, Ruby, Ansible, AWS
+      (EC2, S3, Route53) API and Console, Git, GitHub API, MySQL,
+      Linux, LDAP, OpenLDAP, Jenkins, Vagrent, Moodle (1.9, 2.4), DNS,
+      IRC
+    showwork: yes
+    work:
+      - >
+        Established an automated continuous integration and delivery
+        pipeline for multiple software products.  This effort involved
+        both setting release management policy and enforcement with
+        software tools, some off the shelf (e.g., Jenkins) and some
+        custom developed.
+      - > 
+        Conceived and realized a one click developer and demonstration
+        environment configuration: a completely functional on-demand
+        environment provisioned in the AWS EC2 ready for use in just
+        under five minutes.
+      - > 
+        Provided firm tutelage of a score of Git repositories,
+        mentored development staff in Git use and best practices, and
+        resolved issues as they arose.
+      - >
+        UNIX Administration: Configured and provided tools for an LDAP
+        directory responsible for providing UNIX account information
+        and sudo rules throughout the EC2 infrastructure; configured
+        an EBS backed NFS server; automated DNS configuration with
+        Route53; configured EC2 security groups; installed and managed
+        an ngIRCd server; wrote Ansible playbooks and custom modules
+        to automate all EC2 instance provisioning and configuration;
+        managed APT packages.
 
   - company: Pearson
     location: Boston, MA
     start-date: August 2009
     end-date: April 2013
     title: Development Manager: Release Engineering and Physical Architecture
+    technology: >
+      Perl (Catalyst, Moose), Erlang (Chicago Boss, Cowboy, erlcloud),
+      Ruby (Sinatra), Lisp (Common Lisp, emacs-lisp, Clojure), Linux,
+      AWS (EC2, VPC, Route53, SQS) API and Console, Git, CVS, MySQL,
+      Oracle, LDAP, Atlassian (Bamboo, Fisheye, and Jira) front-ends
+      and APIs, TeX, webservers (Apache, nginx), JavaScript (JQuery)
     showwork: no
 
   - company: Brandeis University
@@ -31,6 +70,10 @@ experience:
     start-date: February 2006
     end-date: June 2009
     title: Technical Lead, Identity Management and Principal Release Engineer
+    technology: >
+      Perl (Catalyst, Moose), PHP, Moodle, MySQL, Linux, LDAP, Common
+      Lisp, OpenLDAP, Cicso VoIP API, Cosign, Apache, OpenSSL, SVN,
+      JavaScript (ExtJS), HTML, CSS, memcached, XML, PeopleSoft API
     showwork: yes
     work:
       - >
@@ -47,7 +90,7 @@ experience:
         Developed a timeclock application deployed across the
         University on Cisco VoIP phones.
       - >
-        Sundry smaller projects -- integrated Cosign single sign-on
+        Sundry smaller projects: integrated Cosign single sign-on
         with on- and off-campus websites; integrated Moodle CMS
         authentication with Cosign (PHP); directed an Apache upgrade
         from v1.x to 2.2 and mod perl 1.x to 2.x; automated
@@ -59,7 +102,7 @@ experience:
     start-date: May 2000
     end-date: February 2006
     title: Senior Release Engineer and Systems Programmer
-    showwork: yes
+    showwork: no
     work:
       - > 
         Developed a best practices release management methodology supported by
