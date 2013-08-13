@@ -12,6 +12,7 @@ use YAML;
 
 use lib "$FindBin::Bin/../lib";
 use ResRender::Text;
+use ResRender::HTML;
 
 my ($help) = ();
 my $output = "$FindBin::Bin/../output";
@@ -31,6 +32,7 @@ $input = -r "$input.yaml" ? "$input.yaml" :
 my $data = YAML::LoadFile($input);
 # print Dumper $data;
 ResRender::Text->render($data, $output);
+ResRender::HTML->render($data, $output);
 
 
 

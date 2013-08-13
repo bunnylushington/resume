@@ -5,7 +5,6 @@ require Exporter;
 
 our @ISA = qw[ Exporter ];
 our @EXPORT_OK = qw[ show_work 
-                     centerline
                      filepath 
                      name 
                      phone
@@ -13,11 +12,6 @@ our @EXPORT_OK = qw[ show_work
                      addresses
                   ];
 our %EXPORT_TAGS = ( all => \@EXPORT_OK );
-
-sub centerline {
-  my $text = shift;
-  ' ' x ((80 - length($text)) / 2) . $text;
-}
 
 sub show_work {
   my $val = lc(shift);

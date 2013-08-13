@@ -20,6 +20,11 @@ sub header {
   say $fh centerline(join " --- ", email($data), phone($data));
 }
 
+sub centerline {
+  my $text = shift;
+  ' ' x ((80 - length($text)) / 2) . $text;
+}
+
 1;
 
 __END__
