@@ -12,6 +12,7 @@ sub render {
   open my $fh, ">", filepath($data, 'tex', $output);
   preamble($fh);
   header($data, $fh);
+  experience($data, $fh);
   postamble($fh);
   close $fh;
 }
@@ -33,6 +34,20 @@ sub header {
   say $fh centerline(smallheadfont($_)) for addresses($data);
   say $fh centerline(smallheadfont(join " --- ", email($data), phone($data)));
   say $fh "\\bigskip";
+}
+
+sub experience {
+  my ($data, $fh) = @_;
+  for my $e (experiences($data)) {
+    my $dates = join " -- ", startdate($e), enddate($e);
+    my ($company, $title, $location) = (company($e), title($e), location($e));
+    say $fh "\\header_one{$company}{$dates}";
+    say $fh "\\header_two{$title}{$location}";
+    if (showwork($e)) {
+      say $fh "\\entry{$_}\\smallskip" for work($e);
+    }
+    say $fh "\\medskip";
+  }
 }
   
 sub AUTOLOAD {
@@ -60,5 +75,5 @@ __DATA__
 
 % -- macros.
 \def\entry#1{\parindent 5mm\item{--}{#1}\parindent 0pt}
-\def\summary#1{\parindent 5mm\item{--}{#1}\parindent 0pt}
-
+\def\header_one#1#2{\leftline{{\bf #1} \hfill #2 }}
+\def\header_two#1#2{\leftline{#1 \hfill #2 }}
