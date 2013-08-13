@@ -33,10 +33,16 @@ sub postamble {
   
 sub header {
   my ($data, $fh) = @_;
+  say $fh qq!<div class="header">!;
   say $fh div({class => 'name'}, name($data));
   say $fh div({class => 'address'}, $_) for addresses($data);
-  say $fh div({class => 'contact'}, 
-              join " &mdash; ", email($data), phone($data));
+   # say $fh div({class => 'contact'}, 
+   #            join " &mdash; ", email($data), phone($data));
+  my $email = email($data);
+  my $mailto = "mailto:$email";
+  say $fh div({class => "email"}, a({href => $mailto}, $email));
+  say $fh div({class => "phone"}, phone($data));
+  say $fh qq!</div>!;
 }
 
 sub experience {
@@ -58,9 +64,8 @@ sub experience {
       }
       say $fh qq!</ul>!;
     }
+    say $fh "</div>\n";
   }
-
-  say $fh "</div>\n";
 }
 
 sub AUTOLOAD {
@@ -84,4 +89,23 @@ sub swig_attrs {
 
 1;
 
-__END__
+__DATA__
+<style>
+body { width: 80%; padding-top: 2em; padding-left: 2em; }
+a { text-decoration: none }
+.header { margin-bottom: 2em; }
+  .name { text-align: center; font-size: 130%; font-weight: bold; }
+  .address { text-align: center; }
+  .phone { text-align: center; }
+  .email { text-align: center; }
+
+.employer { padding-bottom: 2em; }
+  .emp_head_one { width: 100%; clear: both; }
+    .company { float: left; font-weight: bold;  }
+    .dates { float: right; }
+  .emp_head_two { width: 100%; clear: both;}
+    .title { float: left; }
+    .location { float: right; }
+  .worklist { clear: both; width: 75%;}
+    .work { padding-top: 5pt; } 
+</style>
