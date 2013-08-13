@@ -16,19 +16,21 @@ experience:
     start-date: May 2013
     end-date: Present
     title: Operations Architect
+    showwork: no
 
   - company: Pearson
     location: Boston, MA
     start-date: August 2009
     end-date: April 2013
     title: Development Manager: Release Engineering and Physical Architecture
+    showwork: no
 
   - company: Brandeis University
     location: Waltham, MA
     start-date: February 2006
     end-date: June 2009
     title: Technical Lead, Identity Management and Principal Release Engineer
-    showwork: true
+    showwork: yes
     work:
       - >
         Conceived, Designed, and Developed a University-wide Identity
@@ -103,7 +105,7 @@ experience:
     start-date: January 1995
     end-date: October 1996
     title: Internet Specialist
-    shwowork: no
+    showwork: no
     work:
       - >
         Designed, implemented, and launched Northeastern's initial
