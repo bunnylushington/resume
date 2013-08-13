@@ -15,8 +15,16 @@ sub render {
   open my $fh, ">", filepath($data, 'txt', $output);
   header($data, $fh);
   experience($data, $fh);
+  postamble($fh);
   close $fh;
 }
+
+sub postamble {
+  my $fh = shift;
+  chomp(my $date = `date`);
+  say $fh "\n\n", rightline("[$date]");
+}
+
 
 sub header {
   my ($data, $fh) = @_;
@@ -55,6 +63,11 @@ sub pushline {
 sub centerline {
   my $text = shift;
   ' ' x ((80 - length($text)) / 2) . $text;
+}
+
+sub rightline {
+  my $text = shift;
+  pushline("", $text);
 }
 
 1;
