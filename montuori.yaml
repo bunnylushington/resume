@@ -20,11 +20,12 @@ experience:
     start-date: May 2013
     end-date: Present
     title: Operations Architect
+    showtech: yes
     technology: >
       Erlang (Nitrogen, erlhub, erlcloud), Perl, Ruby, Ansible, AWS
       (EC2, S3, Route53) API and Console, Git, GitHub API, MySQL,
-      Linux, LDAP, OpenLDAP, Jenkins, Vagrent, Moodle (1.9, 2.4), DNS,
-      IRC
+      Linux, LDAP/OpenLDAP, Jenkins, Vagrent, Moodle (1.9, 2.4), DNS,
+      IRC, Emacs/emacs-lisp
     showwork: yes
     work:
       - >
@@ -57,12 +58,14 @@ experience:
     start-date: August 2009
     end-date: April 2013
     title: Development Manager: Release Engineering and Physical Architecture
+    showtech: yes
     technology: >
       Perl (Catalyst, Moose), Erlang (Chicago Boss, Cowboy, erlcloud),
-      Ruby (Sinatra), Lisp (Common Lisp, emacs-lisp, Clojure), Linux,
-      AWS (EC2, VPC, Route53, SQS) API and Console, Git, CVS, MySQL,
-      Oracle, LDAP, Atlassian (Bamboo, Fisheye, and Jira) front-ends
-      and APIs, TeX, webservers (Apache, nginx), JavaScript (JQuery)
+      Ruby (Sinatra), Common Lisp, C, Linux, AWS (EC2, VPC, Route53,
+      SQS) API and Console, Heroku, Git, CVS, MySQL, Oracle, LDAP,
+      Atlassian (Bamboo, Fisheye, and Jira) front-ends and APIs, TeX,
+      webservers (Apache, nginx), JavaScript (JQuery),
+      Emacs/emacs-lisp
     showwork: no
 
   - company: Brandeis University
@@ -70,10 +73,12 @@ experience:
     start-date: February 2006
     end-date: June 2009
     title: Technical Lead, Identity Management and Principal Release Engineer
+    showtech: yes
     technology: >
-      Perl (Catalyst, Moose), PHP, Moodle, MySQL, Linux, LDAP, Common
-      Lisp, OpenLDAP, Cicso VoIP API, Cosign, Apache, OpenSSL, SVN,
-      JavaScript (ExtJS), HTML, CSS, memcached, XML, PeopleSoft API
+      Perl (Catalyst, Moose), PHP, C, Objective-C, Moodle, MySQL,
+      Linux, Common Lisp, LDAP/OpenLDAP, Cicso VoIP API, Cosign,
+      Apache, OpenSSL, SVN, JavaScript (ExtJS), HTML, CSS, memcached,
+      XML, PeopleSoft API, Moodle, Emacs/emacs-lisp
     showwork: yes
     work:
       - >
@@ -102,6 +107,11 @@ experience:
     start-date: May 2000
     end-date: February 2006
     title: Senior Release Engineer and Systems Programmer
+    showtech: no
+    technology: >-
+      Perl, Java/J2EE, C, Python, Common Lisp, Solaris, Linux, MySQL,
+      Oracle, LDAP, CVS, SVN, Ant, Maven, Netegrity SiteMinder, IBM
+      WebSphere, Tcl/Tk, Apache, Emacs/emacs-lisp
     showwork: no
     work:
       - > 
@@ -110,7 +120,6 @@ experience:
         secure, and auditable product deployment, server configuration, LDAP
         Directory management, CVS and SVN repository maintenance, automated
         stress testing, and unattended product builds.
-
       - > 
         Liaised with the systems administration group to formulate
         deployment architectures and standards, develop customized
@@ -122,6 +131,9 @@ experience:
     start-date: May 1999
     end-date: May 2000
     title: Assistant Director of Administrative Computer Services
+    showtech: no
+    technology: >-
+      Perl, Sybase, Linux, Tcl, MySQL, JavaScript, Apache, Emacs
     showwork: no
     work:
       - >
@@ -135,6 +147,10 @@ experience:
     start-date: October 1996
     end-date: May 1999
     title: Internet Commerce Application Designer
+    showtech: no
+    technology: >-
+      Perl, Solaris, CVS, SourceSafe, Netscape Enterprise Server,
+      Sybase, JavaScript, Emacs
     showwork: no
     work: 
       - >
@@ -149,6 +165,9 @@ experience:
     start-date: January 1995
     end-date: October 1996
     title: Internet Specialist
+    showtech: no
+    technology: >-
+      Perl, Netscape Enterprise Server, TeX, MySQL, Tcl, AIX, HTML, Emacs
     showwork: no
     work:
       - >
