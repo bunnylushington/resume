@@ -6,11 +6,14 @@ use feature qw[ :5.10 ];
 
 use ResRender qw[ :all ];
 
+our $AUTOLOAD = ();
+
 sub render {
   my (undef, $data, $output) = @_;
   open my $fh, ">", filepath($data, 'html', $output);
   preamble($data, $fh);
   header($data, $fh);
+  experience($data, $fh);
   postamble($fh);
   close $fh;
 }
@@ -36,10 +39,36 @@ sub header {
               join " &mdash; ", email($data), phone($data));
 }
 
-sub div {
-  my ($attrs, $text) = @_;
-  my $att = swig_attrs($attrs);
-  "<div $att>$text</div>";
+sub experience {
+  my ($data, $fh) = @_;
+  for my $e (experiences($data)) {
+    my $dates = join " &ndash; ", startdate($e), enddate($e);
+    say $fh qq!<div class="employer">!;
+    say $fh div({class => "emp_head_one"},
+                span({class => "company"}, company($e)) . 
+                span({class => "dates"}, $dates));
+    say $fh div({class => "emp_head_two"},
+                span({class => "title"}, title($e)) .
+                span({class => "location"}, location($e)));
+    
+    if (showwork($e)) {
+      say $fh qq!<ul class="worklist">!;
+      for my $w (work($e)) {
+        say $fh li({class => "work"}, $w);
+      }
+      say $fh qq!</ul>!;
+    }
+  }
+
+  say $fh "</div>\n";
+}
+
+sub AUTOLOAD {
+  my ($att, $text) = @_;
+  my $pkg = __PACKAGE__;
+  (my $tag = $AUTOLOAD) =~ s/${pkg}:://;
+  my $attrs = swig_attrs($att);
+  qq!<$tag $attrs>$text</$tag>!;
 }
 
 sub swig_attrs {
