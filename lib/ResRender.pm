@@ -4,7 +4,8 @@ use strict;
 require Exporter;
 
 our @ISA = qw[ Exporter ];
-our @EXPORT_OK = qw[ show_work 
+our @EXPORT_OK = qw[
+                     texpath
                      filepath 
                      name 
                      phone
@@ -21,14 +22,13 @@ our @EXPORT_OK = qw[ show_work
                   ];
 our %EXPORT_TAGS = ( all => \@EXPORT_OK );
 
-sub show_work {
-  my $val = lc(shift);
-  ($val eq 'no' or $val eq 'false' or $val == 0) ? 0 : 1;
-}
-
 sub filepath {
   my ($data, $ext, $output) = @_;
   "$output/" . $data->{format_options}->{basename} . ".$ext";
+}
+
+sub texpath {
+  shift->{format_options}->{texpath};
 }
 
 sub name { shift->{name} }

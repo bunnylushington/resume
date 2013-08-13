@@ -9,12 +9,16 @@ our $AUTOLOAD = ();
 
 sub render {
   my (undef, $data, $output) = @_;
-  open my $fh, ">", filepath($data, 'tex', $output);
+  my $texfile = filepath($data, 'tex', $output);
+  open my $fh, ">", $texfile;
   preamble($fh);
   header($data, $fh);
   experience($data, $fh);
   postamble($fh);
   close $fh;
+
+  my $pdf = texpath($data) . "/pdftex -output-directory=$output $texfile";
+  `$pdf`;
 }
 
 sub preamble {
