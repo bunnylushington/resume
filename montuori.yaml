@@ -28,30 +28,89 @@ experience:
     start-date: February 2006
     end-date: June 2009
     title: Technical Lead, Identity Management and Principal Release Engineer
+    showwork: true
+    work:
+      - >
+        Conceived, Designed, and Developed a University-wide Identity
+        Management solution.
+      - >
+        Wrote and deployed an open source release management
+        framework.
+      - >
+        Configured and maintained (with purpose built tools) the
+        University's OpenLDAP Directory infrastructure. This work
+        included custom LDAP schema design and data modeling.
+      - >
+        Developed a timeclock application deployed across the
+        University on Cisco VoIP phones.
+      - >
+        Sundry smaller projects -- integrated Cosign single sign-on
+        with on- and off-campus websites; integrated Moodle CMS
+        authentication with Cosign (PHP); directed an Apache upgrade
+        from v1.x to 2.2 and mod perl 1.x to 2.x; automated
+        maintenance of third party software; configured an OpenSSL CA;
+        and mentored junior staff.
 
   - company: RiskMetrics Group
     location: Cambridge, MA
     start-date: May 2000
     end-date: February 2006
-    title: Release Engineer and Systems Programmer
+    title: Senior Release Engineer and Systems Programmer
+    showwork: yes
+    work:
+      - > 
+        Developed a best practices release management methodology supported by
+        a toolkit of web-based and command-line tools to enable consistent,
+        secure, and auditable product deployment, server configuration, LDAP
+        Directory management, CVS and SVN repository maintenance, automated
+        stress testing, and unattended product builds.
+
+      - > 
+        Liaised with the systems administration group to formulate
+        deployment architectures and standards, develop customized
+        software packages, assist in the automation of server builds,
+        and provide programming expertise for systems projects.
 
   - company: Northeastern University
     location: Boston, MA
     start-date: May 1999
     end-date: May 2000
     title: Assistant Directory of Administrative Computer Services
+    showwork: no
+    work:
+      - >
+        Designed and developed numerous student self-service web applications
+        involving bi-directional mainframe feeds; provided comprehensive
+        Linux, Sybase, and Apache administration; and managed two full-time
+        employees.
 
   - company: John Hancock Financial Services
     location: Boston, MA
     start-date: October 1996
     end-date: May 1999
     title: Internet Commerce Application Designer
+    showwork: no
+    work: 
+      - >
+        Co-developed and deployed John Hancock's interactive website;
+        architected and implemented numerous Casie award winning financial and
+        insurance applications; developed UNIX tools to aid release management 
+        and infrastructure maintenance; configured and maintained a
+        highly available electronic commerce infrastructure.
 
   - company: Northeastern University
     location: Boston, MA
     start-date: January 1995
     end-date: October 1996
-
+    title: Internet Specialist
+    shwowork: no
+    work:
+      - >
+        Designed, implemented, and launched Northeastern's initial
+        interactive web presence in May 1995; performed analysis and
+        programming for continued site growth; and provided technical
+        and customer support.
+  
 
 
   
