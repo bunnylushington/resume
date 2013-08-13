@@ -3,8 +3,4 @@
 .fuse*
 .nfs*
 \#*
-*.log
-*.dvi
-*.pdf
-*.txt
-*.html
+output/*
