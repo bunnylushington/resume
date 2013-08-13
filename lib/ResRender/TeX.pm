@@ -24,7 +24,7 @@ sub preamble {
 
 sub postamble {
   my $fh = shift;
-  say $fh "\\vfill\\eject";
+  say $fh "\\vfill\\eject\\bye";
 }
 
 sub header {
@@ -41,8 +41,8 @@ sub experience {
   for my $e (experiences($data)) {
     my $dates = join " -- ", startdate($e), enddate($e);
     my ($company, $title, $location) = (company($e), title($e), location($e));
-    say $fh "\\header_one{$company}{$dates}";
-    say $fh "\\header_two{$title}{$location}";
+    say $fh "\\headerone{$company}{$dates}";
+    say $fh "\\headertwo{$title}{$location}";
     if (showwork($e)) {
       say $fh "\\entry{$_}\\smallskip" for work($e);
     }
@@ -75,5 +75,5 @@ __DATA__
 
 % -- macros.
 \def\entry#1{\parindent 5mm\item{--}{#1}\parindent 0pt}
-\def\header_one#1#2{\leftline{{\bf #1} \hfill #2 }}
-\def\header_two#1#2{\leftline{#1 \hfill #2 }}
+\def\headerone#1#2{\leftline{{\bf #1} \hfill #2 }}
+\def\headertwo#1#2{\leftline{#1 \hfill #2 }}
