@@ -61,11 +61,10 @@ experience:
     showtech: yes
     technology: >
       Perl (Catalyst, Moose), Erlang (Chicago Boss, Cowboy, erlcloud),
-      Ruby (Sinatra), Common Lisp, C, Linux, AWS (EC2, VPC, Route53,
-      SQS) API and Console, Heroku, Git, CVS, MySQL, Oracle, LDAP,
-      Atlassian (Bamboo, Fisheye, and Jira) front-ends and APIs, TeX,
-      webservers (Apache, nginx), JavaScript (JQuery),
-      Emacs/emacs-lisp
+      Ruby (Sinatra), Common Lisp, C, Linux, OS X, AWS (EC2, VPC,
+      Route53, SQS) API and Console, Heroku, Git, CVS, MySQL, Oracle,
+      LDAP, Atlassian (Bamboo, Fisheye, and Jira) front-ends and APIs,
+      TeX, Apache, nginx, JavaScript (JQuery), DNS, Emacs, emacs-lisp
     showwork: no
 
   - company: Brandeis University
@@ -76,9 +75,9 @@ experience:
     showtech: yes
     technology: >
       Perl (Catalyst, Moose), PHP, C, Objective-C, Moodle, MySQL,
-      Linux, Common Lisp, LDAP/OpenLDAP, Cicso VoIP API, Cosign,
+      Linux, OS X, Common Lisp, LDAP/OpenLDAP, Cicso VoIP API, Cosign,
       Apache, OpenSSL, SVN, JavaScript (ExtJS), HTML, CSS, memcached,
-      XML, PeopleSoft API, Moodle, Emacs/emacs-lisp
+      XML, PeopleSoft API, Moodle, Emacs, emacs-lisp
     showwork: yes
     work:
       - >
@@ -109,9 +108,9 @@ experience:
     title: Senior Release Engineer and Systems Programmer
     showtech: no
     technology: >-
-      Perl, Java/J2EE, C, Python, Common Lisp, Solaris, Linux, MySQL,
-      Oracle, LDAP, CVS, SVN, Ant, Maven, Netegrity SiteMinder, IBM
-      WebSphere, Tcl/Tk, Apache, Emacs/emacs-lisp
+      Perl, Java/J2EE, C, Python, Common Lisp, Solaris, Linux, OS X,
+      MySQL, Oracle, LDAP, CVS, SVN, Ant, Maven, Netegrity SiteMinder,
+      IBM WebSphere, Tcl/Tk, Apache, Emacs, emacs-lisp
     showwork: no
     work:
       - > 
