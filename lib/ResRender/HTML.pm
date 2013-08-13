@@ -23,6 +23,8 @@ sub preamble {
   say $fh "<html><head>";
   say $fh "<title>", name($data), " -- Resume</title>";
   print $fh $_ for <DATA>;
+  chomp(my $date = `date`);
+  say $fh "<!-- generated on $date -->";
   say $fh qq!</head><body><div class="content">!;
 } 
 
