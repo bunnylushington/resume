@@ -15,7 +15,7 @@ links:
 
 experience:
   
-  - company: Ascend Learning
+  - company: Ascend Learning (Contract)
     location: Burlington, MA
     start-date: May 2013
     end-date: Present
@@ -25,7 +25,7 @@ experience:
       Erlang (Nitrogen, erlhub, erlcloud), Perl, Ruby, Ansible, AWS
       (EC2, S3, Route53) API and Console, Git, GitHub API, MySQL,
       Linux, LDAP/OpenLDAP, Jenkins, Vagrent, Moodle (1.9, 2.4), DNS,
-      IRC, Emacs/emacs-lisp
+      IRC, Emacs, emacs-lisp
     showwork: yes
     work:
       - >
@@ -67,7 +67,7 @@ experience:
       TeX, Apache, nginx, JavaScript (JQuery), DNS, Emacs, emacs-lisp
     showwork: no
 
-  - company: Brandeis University
+  - company: Brandeis University (Contract)
     location: Waltham, MA
     start-date: February 2006
     end-date: June 2009
