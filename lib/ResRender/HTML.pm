@@ -23,12 +23,12 @@ sub preamble {
   say $fh "<html><head>";
   say $fh "<title>", name($data), " -- Resume</title>";
   print $fh $_ for <DATA>;
-  say $fh "</head><body>";
+  say $fh qq!</head><body><div class="content">!;
 } 
 
 sub postamble {
   my $fh = shift;
-  say $fh "</body></html>";
+  say $fh "</div></body></html>";
 }
   
 sub header {
@@ -91,21 +91,25 @@ sub swig_attrs {
 
 __DATA__
 <style>
-body { width: 80%; padding-top: 2em; padding-left: 2em; }
+body { width: 80%; padding-top: 2em; padding-left: 2em; background: #AAA; }
 a { text-decoration: none }
-.header { margin-bottom: 2em; }
-  .name { text-align: center; font-size: 130%; font-weight: bold; }
-  .address { text-align: center; }
-  .phone { text-align: center; }
-  .email { text-align: center; }
 
-.employer { padding-bottom: 2em; }
-  .emp_head_one { width: 100%; clear: both; }
-    .company { float: left; font-weight: bold;  }
-    .dates { float: right; }
-  .emp_head_two { width: 100%; clear: both;}
-    .title { float: left; }
-    .location { float: right; }
-  .worklist { clear: both; width: 75%;}
-    .work { padding-top: 5pt; } 
+.content { padding: 1em; background: #FFF; }
+
+  .header { margin-bottom: 2em; }
+    .name { text-align: center; font-size: 130%; font-weight: bold; }
+    .address { text-align: center; }
+    .phone { text-align: center; }
+    .email { text-align: center; }
+  
+  .employer { padding-bottom: 2em; }
+    .emp_head_one { width: 100%; clear: both; }
+      .company { float: left; font-weight: bold;  }
+      .dates { float: right; }
+    .emp_head_two { width: 100%; clear: both;}
+      .title { float: left; }
+      .location { float: right; }
+    .worklist { clear: both; width: 75%;}
+      .work { padding-top: 5pt; } 
+
 </style>
