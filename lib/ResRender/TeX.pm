@@ -32,7 +32,7 @@ sub header {
   say $fh centerline(largeheadfont(name($data)));
   say $fh centerline(smallheadfont($_)) for addresses($data);
   say $fh centerline(smallheadfont(join " --- ", email($data), phone($data)));
-  say "\\bigskip";
+  say $fh "\\bigskip";
 }
   
 sub AUTOLOAD {
