@@ -12,6 +12,7 @@ telephone: (617) 398-7654
 
 links:
   - GitHub: https://github.com/kevinmontuori
+  - LinkedIn: http://linkedin.com/in/montuori
 
 experience:
   
@@ -105,7 +106,7 @@ experience:
       Linux, OS X, Common Lisp, LDAP/OpenLDAP, Cicso VoIP API, Cosign,
       Apache, OpenSSL, SVN, JavaScript (ExtJS), HTML, CSS, memcached,
       XML, PeopleSoft API, Moodle, Emacs/emacs-lisp
-    showwork: yes
+    showwork: no
     work:
       - >
         Conceived, architected, and developed a University-wide
