@@ -17,6 +17,8 @@ our @EXPORT_OK = qw[
                      startdate
                      enddate
                      company
+                     key
+                     shortname
                      showwork
                      work
                   ];
@@ -45,6 +47,8 @@ sub experiences {
   @{ $exp };
 }
 
+sub key { shift->{key} }
+sub shortname { shift->{shortname} }
 sub location { shift->{location} }
 sub title { shift->{title} }
 sub startdate { shift->{"start-date"} }
@@ -59,6 +63,7 @@ sub work {
   my $work = shift->{work};
   map { chomp; $_ } ref $work eq 'ARRAY' ? @{ $work } : ($work);
 }
+
 
 1;
 

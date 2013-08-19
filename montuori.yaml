@@ -2,6 +2,7 @@
 format_options:
   basename: montuori
   texpath: /usr/local/texlive/2013/bin/x86_64-darwin
+  startfrom: 1995-01-01
 
 name: Kevin Montuori
 address: 
@@ -14,20 +15,68 @@ links:
   - GitHub: https://github.com/kevinmontuori
   - LinkedIn: http://linkedin.com/in/montuori
 
+technology: 
+  - Languages:
+      - C: pearson, brandeis, rmg, nu2
+      - Common Lisp: pearson, brandeis, rmg
+      - Erlang: ascend, pearson
+      - JavaScript: pearson, brandeis, rmg
+      - PHP: brandeis
+      - Perl: ascend, pearson, brandeis, rmg, nu2, jh, nu1
+      - Python: brandeis, rmg
+      - Ruby: ascend, pearson
+      - Tcl/Tk: brandeis, rmg, nu2, jh
+      - TeX: pearson, brandeis, nu2, nu1
+  - Software:
+      - Ansible: ascend
+      - Ant: rmg
+      - Apache: ascend, pearson, brandeis, rmg, nu2
+      - Bamboo: pearson
+      - CVS: pearson, rmg, nu2, jh
+      - Cisco VoIP API: brandeis
+      - Emacs: ascend, pearson, brandeis, rmg, nu2, jh, nu1
+      - Git: ascend, pearson
+      - GitHub API: ascend
+      - Jenkins: ascend
+      - Jira: pearson
+      - Maven: rmg
+      - Moodle: ascend, brandeis
+      - Netscape Enterprise Server: jh, nu1
+      - PeopleSoft Webservices API: brandeis
+      - Subversion: brandeis, rmg
+      - Vagrant: ascend
+      - nginx: ascend, pearson
+  - Databases:
+      - MySQL: ascend, pearson, brandeis, rmg
+      - OpenLDAP: ascend, pearson, brandeis, rmg
+      - Oracle: pearson, rmg
+      - PostgreSQL: ascend, pearson
+      - Sybase: nu2, jh
+  - Protocols:
+      - IRC: ascend, pearson
+      - LDAP: ascend, pearson, brandeis, rmg
+  - Infrastructure:
+      - AIX: nu1, nu2
+      - EC2 (AWS): ascend, pearson
+      - Heroku: pearson
+      - Linux (Red Hat): pearson, brandeis, rmg, nu2, jh
+      - Linux (Ubuntu): ascend
+      - OS X: rmg, brandeis, pearson, ascend
+      - Route53 (AWS): ascend, pearson
+      - S3 (AWS): ascend
+      - Solaris: rmg, jh
+
+
 experience:
   
   - company: Ascend Learning (Contract)
+    key: ascend
+    shortname: Ascend
     location: Burlington, MA
     start-date: May 2013
     end-date: Present
     title: Operations Architect
     showtech: yes
-    technology: >
-      Erlang (Nitrogen, erlhub, erlcloud), Perl, Ruby, Ansible, AWS
-      (EC2, S3, Route53) API and Console, Git, GitHub API, MySQL,
-      Linux, LDAP/OpenLDAP, Jenkins, Vagrent, Moodle (1.9, 2.4), DNS,
-      IRC, Emacs/emacs-lisp
-    showwork: yes
     work:
       - >
         Established an automated continuous integration and delivery
@@ -55,17 +104,12 @@ experience:
         managed APT packages.
 
   - company: Pearson
+    key: pearson
+    shortname: Pearson
     location: Boston, MA
     start-date: August 2009
     end-date: April 2013
     title: Development Manager: Release Engineering and Physical Architecture
-    showtech: yes
-    technology: >
-      Perl (Catalyst, Moose), Erlang (Chicago Boss, Cowboy, erlcloud),
-      Ruby (Sinatra), Common Lisp, C, Linux, OS X, AWS (EC2, VPC,
-      Route53, SQS) API and Console, Heroku, Git, CVS, MySQL, Oracle,
-      LDAP, Atlassian (Bamboo, Fisheye, and Jira) front-ends and APIs,
-      TeX, Apache, nginx, JavaScript (JQuery), DNS, Emacs/emacs-lisp
     showwork: yes
     work:
       - >
@@ -96,16 +140,12 @@ experience:
         product application architecture.
 
   - company: Brandeis University (Contract)
+    key: brandeis
+    shortname: Brandeis
     location: Waltham, MA
     start-date: February 2006
     end-date: June 2009
     title: Technical Lead, Identity Management and Principal Release Engineer
-    showtech: yes
-    technology: >
-      Perl (Catalyst, Moose), PHP, C, Objective-C, Moodle, MySQL,
-      Linux, OS X, Common Lisp, LDAP/OpenLDAP, Cicso VoIP API, Cosign,
-      Apache, OpenSSL, SVN, JavaScript (ExtJS), HTML, CSS, memcached,
-      XML, PeopleSoft API, Moodle, Emacs/emacs-lisp
     showwork: no
     work:
       - >
@@ -130,15 +170,12 @@ experience:
         junior staff.
 
   - company: RiskMetrics Group
+    key: rmg
+    shortname: RMG
     location: Cambridge, MA
     start-date: May 2000
     end-date: February 2006
     title: Senior Release Engineer and Systems Programmer
-    showtech: no
-    technology: >-
-      Perl, Java/J2EE, C, Python, Common Lisp, Solaris, Linux, OS X,
-      MySQL, Oracle, LDAP, CVS, SVN, Ant, Maven, Netegrity SiteMinder,
-      IBM WebSphere, Tcl/Tk, Apache, Emacs/emacs-lisp
     showwork: no
     work:
       - > 
@@ -154,13 +191,12 @@ experience:
         and provide programming expertise for systems projects.
 
   - company: Northeastern University
+    key: nu2
+    shortname: NU-2
     location: Boston, MA
     start-date: May 1999
     end-date: May 2000
     title: Assistant Director of Administrative Computer Services
-    showtech: no
-    technology: >-
-      Perl, Sybase, Linux, Tcl, MySQL, JavaScript, Apache, Emacs
     showwork: no
     work:
       - >
@@ -170,14 +206,12 @@ experience:
         employees.
 
   - company: John Hancock Financial Services
+    key: jh
+    shortname: Hancock
     location: Boston, MA
     start-date: October 1996
     end-date: May 1999
     title: Internet Commerce Application Designer
-    showtech: no
-    technology: >-
-      Perl, Solaris, CVS, SourceSafe, Netscape Enterprise Server,
-      Sybase, JavaScript, Emacs
     showwork: no
     work: 
       - >
@@ -188,13 +222,12 @@ experience:
         highly available electronic commerce infrastructure.
 
   - company: Northeastern University
+    key: nu1
+    shortname: NU-1
     location: Boston, MA
     start-date: January 1995
     end-date: October 1996
     title: Internet Specialist
-    showtech: no
-    technology: >-
-      Perl, Netscape Enterprise Server, TeX, MySQL, Tcl, AIX, HTML, Emacs
     showwork: no
     work:
       - >

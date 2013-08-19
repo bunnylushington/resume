@@ -14,6 +14,7 @@ use lib "$FindBin::Bin/../lib";
 use ResRender::Text;
 use ResRender::HTML;
 use ResRender::TeX;
+use ResRender::Graph;
 
 my ($help) = ();
 my $output = "$FindBin::Bin/../output";
@@ -31,10 +32,12 @@ $input = -r "$input.yaml" ? "$input.yaml" :
 -r $input or die "Could not read input file '$input'.\n";
 
 my $data = YAML::LoadFile($input);
-# print Dumper $data;
+
 ResRender::Text->render($data, $output);
 ResRender::HTML->render($data, $output);
 ResRender::TeX->render($data, $output);
+
+ResRender::Graph->render_js($data, $output);
 
 
 
