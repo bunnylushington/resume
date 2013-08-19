@@ -25,7 +25,7 @@ experience:
       Erlang (Nitrogen, erlhub, erlcloud), Perl, Ruby, Ansible, AWS
       (EC2, S3, Route53) API and Console, Git, GitHub API, MySQL,
       Linux, LDAP/OpenLDAP, Jenkins, Vagrent, Moodle (1.9, 2.4), DNS,
-      IRC, Emacs, emacs-lisp
+      IRC, Emacs/emacs-lisp
     showwork: yes
     work:
       - >
@@ -64,8 +64,35 @@ experience:
       Ruby (Sinatra), Common Lisp, C, Linux, OS X, AWS (EC2, VPC,
       Route53, SQS) API and Console, Heroku, Git, CVS, MySQL, Oracle,
       LDAP, Atlassian (Bamboo, Fisheye, and Jira) front-ends and APIs,
-      TeX, Apache, nginx, JavaScript (JQuery), DNS, Emacs, emacs-lisp
-    showwork: no
+      TeX, Apache, nginx, JavaScript (JQuery), DNS, Emacs/emacs-lisp
+    showwork: yes
+    work:
+      - >
+        Recruited, managed, and mentored a team responsible for
+        continuous integration, zero downtime release, configruation
+        management, deployment architecture planning and
+        configuration, developer support, and back office tools
+        creation.
+      - >
+        Engaged with management peers to set technical direction,
+        assist in the administraiton of an Agile development process,
+        conduct employee performance reviews, interview technical
+        applicants, prioritize workloads, and set product strategy.
+      - >
+        Designed a fully automated continuous delivery release
+        process, developed and modified software to enforce that
+        process, and managed the release lifecycles of multiple
+        interdependent products during six half year product cycles.
+      - > 
+        Evolved a deployment architecture and application
+        configuration to support continuous product delivery,
+        migration to a services oriented architecture, and a twofold
+        increase in concurrent users.
+      - >
+        Administered OpenLDAP, MySQL, nginx, Apache/modperl, CouchDB;
+        performed Perl, Ruby, Python, and Erlang library management;
+        consulted on production issue resolution; and advised with
+        product application architecture.
 
   - company: Brandeis University (Contract)
     location: Waltham, MA
@@ -77,29 +104,29 @@ experience:
       Perl (Catalyst, Moose), PHP, C, Objective-C, Moodle, MySQL,
       Linux, OS X, Common Lisp, LDAP/OpenLDAP, Cicso VoIP API, Cosign,
       Apache, OpenSSL, SVN, JavaScript (ExtJS), HTML, CSS, memcached,
-      XML, PeopleSoft API, Moodle, Emacs, emacs-lisp
+      XML, PeopleSoft API, Moodle, Emacs/emacs-lisp
     showwork: yes
     work:
       - >
-        Conceived, Designed, and Developed a University-wide Identity
-        Management solution.
+        Conceived, architected, and developed a University-wide
+        Identity Management solution with hooks into multiple backends
+        (including PeopleSoft HR and ERP) and substantial self-service
+        utilities at the individual and department levels.
+
       - >
-        Wrote and deployed an open source release management
-        framework.
+        Wrote and deployed a release management framework.  Introduced
+        a sustainable release process for the internal development
+        organization and managed the release life cycle of several
+        dozen applications.
       - >
-        Configured and maintained (with purpose built tools) the
-        University's OpenLDAP Directory infrastructure. This work
-        included custom LDAP schema design and data modeling.
-      - >
-        Developed a timeclock application deployed across the
-        University on Cisco VoIP phones.
-      - >
-        Sundry smaller projects: integrated Cosign single sign-on
-        with on- and off-campus websites; integrated Moodle CMS
-        authentication with Cosign (PHP); directed an Apache upgrade
-        from v1.x to 2.2 and mod perl 1.x to 2.x; automated
-        maintenance of third party software; configured an OpenSSL CA;
-        and mentored junior staff.
+        Sundry smaller projects: designed, implemented, and maintained
+        the University's highly available LDAP infrastructure;
+        integrated Cosign SSO with on- and off-campus websites;
+        integrated Moodle LMS authentication with Cosign (PHP);
+        directected an Apache and modperl v1 to v2 upgrade; automated
+        maintenance of third party software; deployed an OpenSSL CA;
+        developed a Cisco VoIP employee punch clock; and mentored
+        junior staff.
 
   - company: RiskMetrics Group
     location: Cambridge, MA
@@ -110,7 +137,7 @@ experience:
     technology: >-
       Perl, Java/J2EE, C, Python, Common Lisp, Solaris, Linux, OS X,
       MySQL, Oracle, LDAP, CVS, SVN, Ant, Maven, Netegrity SiteMinder,
-      IBM WebSphere, Tcl/Tk, Apache, Emacs, emacs-lisp
+      IBM WebSphere, Tcl/Tk, Apache, Emacs/emacs-lisp
     showwork: no
     work:
       - > 
