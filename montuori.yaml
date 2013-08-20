@@ -4,6 +4,7 @@ format_options:
   texpath: /usr/local/texlive/2013/bin/x86_64-darwin
   startfrom: 1995-01-01
 
+
 name: Kevin Montuori
 address: 
   - 33 Cornwall St., Jamaica Plain, MA, 02130
@@ -144,7 +145,7 @@ experience:
     shortname: Brandeis
     location: Waltham, MA
     start-date: February 2006
-    end-date: June 2009
+    end-date: July 2009
     title: Technical Lead, Identity Management and Principal Release Engineer
     showwork: no
     work:

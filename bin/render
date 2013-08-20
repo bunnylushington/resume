@@ -37,7 +37,7 @@ ResRender::Text->render($data, $output);
 ResRender::HTML->render($data, $output);
 ResRender::TeX->render($data, $output);
 
-ResRender::Graph->render_js($data, $output);
+ResRender::Graph->render($data, $output);
 
 
 
