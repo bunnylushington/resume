@@ -1,0 +1,54 @@
+#!/usr/bin/env perl
+
+use strict;
+use autodie;
+use feature qw[ :5.10 ];
+
+use FindBin;
+use Getopt::Long;
+use Pod::Usage;
+
+my $help = ();
+GetOptions("help" => \$help);
+pod2usage if $help;
+
+
+my $etl = "$FindBin::Bin/EasyTimeline.pl";
+$ENV{GDFONTPATH} = "$FindBin::Bin/../etc";
+my $output_dir = "$FindBin::Bin/../output";
+my $tmp_dir = "$FindBin::Bin/../work";
+my $input = "$FindBin::Bin/../work/" . shift;
+
+mkdir $tmp_dir unless -d $tmp_dir;
+exec "$etl -T $tmp_dir -i $input";
+
+
+__END__
+
+=head1 NAME
+
+timeline - prepare arguments and env to call EasyTimeline.pl
+
+=head1 SYNOPSIS
+
+timeline <inputfile>
+
+Where <inputfile> is in the ../work directory.
+
+=head1 NOTE
+
+Running EasyTimeline with the fancy font involves installing (on OS X):
+
+  pnglib
+  jpeglib
+  FreeType
+  GD
+  ploticus (with the custom GD option)
+
+and some modifications to EasyTimeline (that are captured in the VC'd
+version).
+
+=head1 AUTHOR
+
+  kevin montuori <montuori@gmail.com>
+  August 2013

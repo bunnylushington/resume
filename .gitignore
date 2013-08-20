@@ -4,3 +4,4 @@
 .nfs*
 \#*
 output/*
+work/*

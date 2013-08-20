@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 
 # http://svn.wikimedia.org/viewvc/mediawiki/trunk/extensions/timeline
 

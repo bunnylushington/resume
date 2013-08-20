@@ -4,7 +4,6 @@ format_options:
   texpath: /usr/local/texlive/2013/bin/x86_64-darwin
   startfrom: 1995-01-01
 
-
 name: Kevin Montuori
 address: 
   - 33 Cornwall St., Jamaica Plain, MA, 02130
@@ -24,7 +23,7 @@ technology:
       - JavaScript: pearson, brandeis, rmg
       - PHP: brandeis
       - Perl: ascend, pearson, brandeis, rmg, nu2, jh, nu1
-      - Python: brandeis, rmg
+      - Python: brandeis, rmg, ascend
       - Ruby: ascend, pearson
       - Tcl/Tk: brandeis, rmg, nu2, jh
       - TeX: pearson, brandeis, nu2, nu1
@@ -193,7 +192,7 @@ experience:
 
   - company: Northeastern University
     key: nu2
-    shortname: NU-2
+    shortname: NU
     location: Boston, MA
     start-date: May 1999
     end-date: May 2000
@@ -224,7 +223,7 @@ experience:
 
   - company: Northeastern University
     key: nu1
-    shortname: NU-1
+    shortname: NU
     location: Boston, MA
     start-date: January 1995
     end-date: October 1996
