@@ -5,7 +5,7 @@ use Data::Dumper;
 use Date::Calc;
 use ResRender qw[ :all ];
 use feature qw[ :5.10 ];
-
+use FindBin;
 
 my @colors = qw[ orange
                  purple
@@ -38,42 +38,47 @@ my @colors = qw[ orange
 
 sub render {
   my (undef, $data, $output) = @_;
+  mkdir "$output/plots" unless -d "$output/plots";
   my $dates = make_date_hash($data);
   my $categories = make_categories($data);
+  my @plots = ();
   for my $c (@{ $categories }) {
     my $category = $c->[0];
     my $itemlist = $c->[1];
     my @items = map { $_->[0] } @{ $itemlist };
 
-    say "PlotArea = left:150 bottom:60 top:0 right:50";
-    say "Alignbars = justify";
-    say "DateFormat = dd/mm/yyyy";
-    say "ImageSize = width:800 height:300";
-    say "Period = from:01/01/1995 till:01/01/2014";
-    say "TimeAxis = orientation:horizontal format:yyyy";
-    say "ScaleMajor = increment:2 start:1995";
-    say "Fonts = \n  id:sans font:OpenSans-Regular";
+    open P, ">", "$output/../work/$category";
+    push @plots => $category;
+
+    say P "PlotArea = left:150 bottom:60 top:0 right:50";
+    say P "Alignbars = justify";
+    say P "DateFormat = dd/mm/yyyy";
+    say P "ImageSize = width:800 height:300";
+    say P "Period = from:01/01/1995 till:01/01/2014";
+    say P "TimeAxis = orientation:horizontal format:yyyy";
+    say P "ScaleMajor = increment:2 start:1995";
+    say P "Fonts = \n  id:sans font:OpenSans-Regular";
     
-    say "Colors =";
+    say P "Colors =";
     for my $i (0 .. $#items) {
-      say " id:$i value:$colors[$i]";
+      say P " id:$i value:$colors[$i]";
     }
-    say " id:job value:gray(0.8)";
+    say P " id:job value:gray(0.8)";
 
-    say "BarData =";
+    say P "BarData =";
     for my $i (0 .. $#items) {
-      say qq! bar:$i text:"$items[$i]" !;
+      say P qq! bar:$i text:"$items[$i]" !;
     }
-    say qq!  bar:jobs !;
+    say P qq!  bar:jobs !;
 
-    say "PlotData =";
+    say P "PlotData =";
     my $pd = join " " => qw[ width:10
                              textcolor:black
                              align:left
                              mark:(line,white)
                              anchor:from
                              shift:(10,-4) ];
-    say "  $pd";
+    say P "  $pd";
     my %ends = ();
     for my $i (0 .. $#items) {
       my ($skill, $keys) =  @{ $itemlist->[$i] };
@@ -81,7 +86,7 @@ sub render {
         my $from = $dates->{$jobkey}->{start};
         my $till = $dates->{$jobkey}->{end};
         $ends{$till}++;
-         say "  bar:$i from:$from till:$till color:$i";
+         say P "  bar:$i from:$from till:$till color:$i";
        }
     }
 
@@ -90,12 +95,14 @@ sub render {
       my $from = $dates->{$key}->{start};
       my $till = $dates->{$key}->{end};
       my $text = $dates->{$key}->{label};
-      say "   $legend_param from:$from till:$till text:$text";
+      say P "   $legend_param from:$from till:$till text:$text";
     }
-
-    last;
   }
-    
+
+  for my $plot (@plots) {
+    print `$FindBin::Bin/timeline $plot`;
+  }
+
 }
 
 
