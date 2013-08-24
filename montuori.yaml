@@ -16,55 +16,64 @@ links:
   - LinkedIn: http://linkedin.com/in/montuori
 
 technology: 
-  - Languages:
-      - C: pearson, brandeis, rmg, nu2
-      - Common Lisp: pearson, brandeis, rmg
-      - Erlang: ascend, pearson
-      - JavaScript: pearson, brandeis, rmg
-      - PHP: brandeis
+  - Language:
       - Perl: ascend, pearson, brandeis, rmg, nu2, jh, nu1
+      - Emacs-Lisp: ascend, pearson, brandeis, rmg, nu2, jh, nu1
+      - Erlang: ascend, pearson
       - Python: brandeis, rmg, ascend
       - Ruby: ascend, pearson
-      - Tcl/Tk: brandeis, rmg, nu2, jh
+      - PHP: ascend, brandeis
+      - Common Lisp: pearson, brandeis, rmg
+      - C: pearson, brandeis, rmg, nu2
+      - JavaScript: pearson, brandeis, rmg
       - TeX: pearson, brandeis, nu2, nu1
-  - Software:
-      - Ansible: ascend
-      - Ant: rmg
-      - Apache: ascend, pearson, brandeis, rmg, nu2
-      - Bamboo: pearson
-      - CVS: pearson, rmg, nu2, jh
-      - Cisco VoIP API: brandeis
-      - Emacs: ascend, pearson, brandeis, rmg, nu2, jh, nu1
-      - Git: ascend, pearson
-      - GitHub API: ascend
-      - Jenkins: ascend
-      - Jira: pearson
-      - Maven: rmg
-      - Moodle: ascend, brandeis
-      - Netscape Enterprise Server: jh, nu1
+      - Tcl/Tk: brandeis, rmg, nu2, jh
+  - API:
+      - GitHub Console/API: ascend
+      - Moodle API: ascend, brandeis
+      - Amazon Web Services Console/API: ascend, pearson
+      - Jira Console/API: pearson
       - PeopleSoft Webservices API: brandeis
+      - Cisco VoIP API: brandeis
+  - Software: 
+      - make: ascend, pearson, brandeis, rmg
+      - Jenkins: ascend
+      - Ansible: ascend
+      - Bamboo: pearson
+      - XWrap: pearson, brandeis
+      - Ant/Maven: rmg
+  - Webserver:
+      - nginx: ascend, pearson, brandeis
+      - Apache: ascend, pearson, brandeis, rmg, nu2
+      - Netscape Enterprise Server: jh, nu1
+  - SCM:
+      - Git: ascend, pearson
       - Subversion: brandeis, rmg
-      - Vagrant: ascend
-      - nginx: ascend, pearson
-  - Databases:
+      - CVS: pearson, rmg, nu2, jh
+      - Visual SourceSafe (UNIX): jh
+  - Database:
       - MySQL: ascend, pearson, brandeis, rmg
       - OpenLDAP: ascend, pearson, brandeis, rmg
-      - Oracle: pearson, rmg
       - PostgreSQL: ascend, pearson
+      - Oracle: pearson, rmg
       - Sybase: nu2, jh
-  - Protocols:
-      - IRC: ascend, pearson
-      - LDAP: ascend, pearson, brandeis, rmg
-  - Infrastructure:
-      - AIX: nu1, nu2
-      - EC2 (AWS): ascend, pearson
-      - Heroku: pearson
-      - Linux (Red Hat): pearson, brandeis, rmg, nu2, jh
-      - Linux (Ubuntu): ascend
-      - OS X: rmg, brandeis, pearson, ascend
-      - Route53 (AWS): ascend, pearson
+  # - Protocols:
+  #     - HTTP: ascend, pearson, brandeis, rmg, nu2, jh, nu1
+  #     - IRC: ascend, pearson
+  #     - LDAP: ascend, pearson, brandeis, rmg
+  #     - SMTP: ascend, pearson, brandeis, rmg, jh
+  - Cloud:
       - S3 (AWS): ascend
+      - EC2 (AWS): ascend, pearson
+      - Digital Ocean: ascend, pearson
+      - Route53 (AWS): ascend, pearson
+      - Heroku: pearson
+  - OS:
+      - OS X: rmg, brandeis, pearson, ascend
+      - Linux (Ubuntu): ascend
+      - Linux (Red Hat): pearson, brandeis, rmg, nu2, jh
       - Solaris: rmg, jh
+      - AIX: nu1, nu2
 
 
 experience:

@@ -8,28 +8,24 @@ use feature qw[ :5.10 ];
 use FindBin;
 use Digest::MD5 qw[ md5_hex ];
 
-my @colors = qw[ orange
+my @colors = qw[ drabgreen
+                 orange
                  purple
                  magenta
-                 redorange
-                 yellow2
-                 green
-                 darkblue
-                 lavender
+                 teal
+                 skyblue
                  claret
-                 lightorange
                  dullyellow
                  kelleygreen
                  blue
                  lightpurple
                  coral
                  yelloworange
-                 teal
+                 green
                  oceanblue
                  powderblue
                  tan1
                  pink
-                 drabgreen
                  skyblue
                  powderblue2
                  tan2
@@ -48,11 +44,12 @@ sub render {
   say P "PlotArea = left:150 bottom:60 top:0 right:50";
   say P "Alignbars = justify";
   say P "DateFormat = dd/mm/yyyy";
-  say P "ImageSize = width:800 height:600";
+  say P "ImageSize = width:800 height:800";
   say P "Period = from:01/01/1995 till:01/01/2014";
   say P "TimeAxis = orientation:horizontal format:yyyy";
   say P "ScaleMajor = increment:2 start:1995";
   say P "Fonts = \n  id:sans font:OpenSans-Regular";
+  say P "Legend = orientation:vertical position:right";
 
   my $plot_spec = join " " => qw[ width:10 
                                   textcolor:black 
@@ -66,8 +63,8 @@ sub render {
   for my $c (@{ $categories }) {
     my ($category, $itemlist) = @{ $c };
     my $color = md5_hex($category);
-    push @color_data => 
-      sprintf "id:%s value:%s" => $color, $colors[$color_idx++];
+    push @color_data => sprintf qq!id:%s value:%s legend:%s! => 
+      $color, $colors[$color_idx++], prep_cat($category);
     for my $item (@{ $itemlist }) {
       my ($skill, $jobkeys) = @{ $item };
       push @bar_data => qq!bar:$bar_idx text:"$skill"!;
@@ -105,7 +102,6 @@ sub render {
   print `$FindBin::Bin/timeline skills`;
 }
 
-
 sub make_categories {
   my ($data) = shift;
   my @categories = ();
@@ -122,6 +118,11 @@ sub make_categories {
   }
   return \@categories;
   # [ [Languages, [ [Perl, [j1, j2, j3]], [Tcl, [j1, j2]] ]], [Infra ... ] ]
+}
+
+sub prep_cat {
+  (my $cat = shift) =~ s/ /\\ /g;
+  return $cat;
 }
 
 sub make_date_hash {
