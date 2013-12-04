@@ -31,14 +31,14 @@ technology:
   - API:
       - GitHub Console/API: ascend
       - Moodle API: ascend, brandeis
-      - Amazon Web Services Console/API: ascend, pearson
+      - AWS Console/API: ascend, pearson
       - Jira Console/API: pearson
       - PeopleSoft Webservices API: brandeis
       - Cisco VoIP API: brandeis
   - Software: 
       - make: ascend, pearson, brandeis, rmg
       - Jenkins: ascend
-      - Ansible: ascend
+      - Salt: ascend
       - Bamboo: pearson
       - XWrap: pearson, brandeis
       - Ant/Maven: rmg
@@ -92,11 +92,11 @@ experience:
         pipeline for multiple software products.  This effort involved
         both setting release management policy and enforcement with
         software tools, some off the shelf (e.g., Jenkins) and some
-        custom developed.
+        custom developed in Erlang, Perl, and Python.
       - > 
         Conceived and realized a one click developer and demonstration
         environment configuration: a completely functional on-demand
-        environment provisioned in the AWS EC2 ready for use in just
+        environment provisioned in the AWS EC2 ready for use in
         under five minutes.
       - > 
         Provided firm tutelage of a score of Git repositories,
@@ -108,7 +108,7 @@ experience:
         and sudo rules throughout the EC2 infrastructure; configured
         an EBS backed NFS server; automated DNS configuration with
         Route53; configured EC2 security groups; installed and managed
-        an ngIRCd server; wrote Ansible playbooks and custom modules
+        an ngIRCd server; wrote Salt SLSs and custom modules
         to automate all EC2 instance provisioning and configuration;
         managed APT packages.
 
