@@ -90,14 +90,13 @@ experience:
       - >
         Established an automated continuous integration and delivery
         pipeline for multiple software products.  This effort involved
-        both setting release management policy and enforcement with
+        setting release management policy and enforcement with
         software tools, some off the shelf (e.g., Jenkins) and some
         custom developed in Erlang, Perl, and Python.
       - > 
-        Conceived and realized a one click developer and demonstration
-        environment configuration: a completely functional on-demand
-        environment provisioned in the AWS EC2 ready for use in
-        under five minutes.
+        Conceived and realized a one click EC2 provisioning system
+        employing SaltStack and a custom Erlang/Nitrogen web
+        application.
       - > 
         Provided firm tutelage of a score of Git repositories,
         mentored development staff in Git use and best practices, and
@@ -162,7 +161,6 @@ experience:
         Identity Management solution with hooks into multiple backends
         (including PeopleSoft HR and ERP) and substantial self-service
         utilities at the individual and department levels.
-
       - >
         Wrote and deployed a release management framework.  Introduced
         a sustainable release process for the internal development
