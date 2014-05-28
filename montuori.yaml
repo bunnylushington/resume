@@ -107,9 +107,9 @@ experience:
         and sudo rules throughout the EC2 infrastructure; configured
         an EBS backed NFS server; automated DNS configuration with
         Route53; configured EC2 security groups; installed and managed
-        an ngIRCd server; wrote Salt SLSs and custom modules
-        to automate all EC2 instance provisioning and configuration;
-        managed APT packages.
+        an ngIRCd server; wrote Salt SLSs and custom modules to
+        automate all EC2, RDS, ELB, and EBS provisioning and
+        configuration; managed APT packages.
 
   - company: Pearson
     key: pearson

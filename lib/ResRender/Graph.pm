@@ -45,7 +45,7 @@ sub render {
   say P "Alignbars = justify";
   say P "DateFormat = dd/mm/yyyy";
   say P "ImageSize = width:800 height:800";
-  say P "Period = from:01/01/1995 till:01/01/2014";
+  say P "Period = from:01/01/1995 till:01/01/2015";
   say P "TimeAxis = orientation:horizontal format:yyyy";
   say P "ScaleMajor = increment:2 start:1995";
   say P "Fonts = \n  id:sans font:OpenSans-Regular";
