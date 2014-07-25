@@ -17,42 +17,43 @@ links:
 
 technology: 
   - Language:
-      - Perl: ascend, pearson, brandeis, rmg, nu2, jh, nu1
+      - Perl: lectica, ascend, pearson, brandeis, rmg, nu2, jh, nu1
       - Emacs-Lisp: ascend, pearson, brandeis, rmg, nu2, jh, nu1
-      - Erlang: ascend, pearson
-      - Python: brandeis, rmg, ascend
+      - Erlang: ascend, pearson, lectica
+      - Elixir: lectica
+      - Python: brandeis, rmg, ascend, lectica
       - Ruby: ascend, pearson
-      - PHP: ascend, brandeis
+      - PHP: ascend, brandeis, lectica
       - Common Lisp: pearson, brandeis, rmg
       - C: pearson, brandeis, rmg, nu2
-      - JavaScript: pearson, brandeis, rmg
+      - JavaScript: pearson, brandeis, rmg, lectica
       - TeX: pearson, brandeis, nu2, nu1
       - Tcl/Tk: brandeis, rmg, nu2, jh
   - API:
-      - GitHub Console/API: ascend
+      - GitHub Console/API: ascend, lectica
       - Moodle API: ascend, brandeis
-      - AWS Console/API: ascend, pearson
+      - AWS Console/API: ascend, pearson, lectica
       - Jira Console/API: pearson
       - PeopleSoft Webservices API: brandeis
       - Cisco VoIP API: brandeis
   - Software: 
       - make: ascend, pearson, brandeis, rmg
       - Jenkins: ascend
-      - Salt: ascend
+      - Salt: ascend, lectica
       - Bamboo: pearson
       - XWrap: pearson, brandeis
       - Ant/Maven: rmg
   - Webserver:
-      - nginx: ascend, pearson, brandeis
+      - nginx: ascend, pearson, brandeis, lectica
       - Apache: ascend, pearson, brandeis, rmg, nu2
       - Netscape Enterprise Server: jh, nu1
   - SCM:
-      - Git: ascend, pearson
+      - Git: ascend, pearson, lectica
       - Subversion: brandeis, rmg
       - CVS: pearson, rmg, nu2, jh
       - Visual SourceSafe (UNIX): jh
   - Database:
-      - MySQL: ascend, pearson, brandeis, rmg
+      - MySQL: ascend, pearson, brandeis, rmg, lectica
       - OpenLDAP: ascend, pearson, brandeis, rmg
       - PostgreSQL: ascend, pearson
       - Oracle: pearson, rmg
@@ -64,44 +65,63 @@ technology:
   #     - SMTP: ascend, pearson, brandeis, rmg, jh
   - Cloud:
       - S3 (AWS): ascend
-      - EC2 (AWS): ascend, pearson
-      - Digital Ocean: ascend, pearson
-      - Route53 (AWS): ascend, pearson
+      - EC2 (AWS): ascend, pearson, lectica
+      - Digital Ocean: ascend, pearson, lectica
+      - Route53 (AWS): ascend, pearson, lectica
       - Heroku: pearson
   - OS:
-      - OS X: rmg, brandeis, pearson, ascend
-      - Linux (Ubuntu): ascend
+      - OS X: rmg, brandeis, pearson, ascend, lectica
+      - Linux (Ubuntu): ascend, lectica
       - Linux (Red Hat): pearson, brandeis, rmg, nu2, jh
       - Solaris: rmg, jh
       - AIX: nu1, nu2
 
 
 experience:
+
+  - company: Lectica, Inc. (Contract)
+    key: lectica
+    shortname: Lectica
+    location: Northhampton, MA (Remote)
+    start-date: January 2014
+    end-date: Present
+    title: Technical Consultant
+    showtech: yes
+    work:
+      - >
+        Designed an IRC based Elixir front end for infrastructure and
+        operationas management including the build/release process,
+        server provisioning, and database management.
+      - >
+        Migrated two LAMP applications from a naive production-only,
+        one-host infrastructure to a Salt managed dev-test-prod
+        deployment architecture; introduced Git VC, implemented MySQL
+        replication, migrated from Apache/modphp to nginx/php5-fpm.
+      - >
+        Built Salt recipes and modules for Digital Ocean VM
+        provisioning and configuration, Route53 DNS management, and
+        local Vagrant based developer environments; architected a
+        multi-consumer grains/pillars data environment; wrote custom
+        build and release code.
   
   - company: Ascend Learning (Contract)
     key: ascend
     shortname: Ascend
-    location: Burlington, MA
+    location: Burlington, MA (Remote)
     start-date: May 2013
-    end-date: Present
+    end-date: June 2014
     title: Operations Architect
     showtech: yes
     work:
       - >
         Established an automated continuous integration and delivery
-        pipeline for multiple software products.  This effort involved
-        setting release management policy and enforcement with
-        software tools, some off the shelf (e.g., Jenkins) and some
-        custom developed in Erlang, Perl, and Python.
+        pipeline for multiple software products employing Erlang,
+        Perl, Salt, AWS, and Jenkins.
       - > 
         Conceived and realized a one click EC2 provisioning system
         employing SaltStack and a custom Erlang/Nitrogen web
         application.
       - > 
-        Provided firm tutelage of a score of Git repositories,
-        mentored development staff in Git use and best practices, and
-        resolved issues as they arose.
-      - >
         UNIX Administration: Configured and provided tools for an LDAP
         directory responsible for providing UNIX account information
         and sudo rules throughout the EC2 infrastructure; configured
@@ -141,11 +161,12 @@ experience:
         configuration to support continuous product delivery,
         migration to a services oriented architecture, and a twofold
         increase in concurrent users.
-      - >
-        Administered OpenLDAP, MySQL, nginx, Apache/modperl, CouchDB;
-        performed Perl, Ruby, Python, and Erlang library management;
-        consulted on production issue resolution; and advised with
-        product application architecture.
+
+      # - >
+      #   Administered OpenLDAP, MySQL, nginx, Apache/modperl, CouchDB;
+      #   performed Perl, Ruby, Python, and Erlang library management;
+      #   consulted on production issue resolution; and advised with
+      #   product application architecture.
 
   - company: Brandeis University (Contract)
     key: brandeis
