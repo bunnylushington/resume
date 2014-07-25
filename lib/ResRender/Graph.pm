@@ -83,19 +83,19 @@ sub render {
 
   say P "BarData=";
   say P "  $_" for @bar_data;
-  say P "  bar:jobs";
+  say P "  bar:jobs";           
 
   say P "PlotData=";
   say P "  $plot_spec";
   say P "  $_" for @plot_data;
   
-  my $legend_param = 'bar:jobs color:white textcolor:job';
-  for my $key (keys %{ $dates }) {
-    my $from = $dates->{$key}->{start};
-    my $till = $dates->{$key}->{end};
-    my $text = $dates->{$key}->{label};
-    say P "  $legend_param from:$from till:$till text:$text";
-  }
+  # my $legend_param = 'bar:jobs color:white textcolor:job';
+  # for my $key (keys %{ $dates }) {
+  #   my $from = $dates->{$key}->{start};
+  #   my $till = $dates->{$key}->{end};
+  #   my $text = $dates->{$key}->{label};
+  #   say P "  $legend_param from:$from till:$till text:$text";
+  # }
 
   close P;
   
