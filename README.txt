@@ -7,7 +7,7 @@ Lectica, Inc. (Contract)                                 January 2014 -- Present
 Technical Consultant                                   Northhampton, MA (Remote)
 
    * Designed an IRC based Elixir front end for infrastructure and
-     operationas management including the build/release process, server
+     operations management including the build/release process, server
      provisioning, and database management.
 
    * Migrated two LAMP applications from a naive production-only, one-host
@@ -49,7 +49,7 @@ Development Manager: Release Engineering and Physical Architecture    Boston, MA
      and back office tools creation.
 
    * Engaged with management peers to set technical direction, assist in
-     the administraiton of an Agile development process, conduct employee
+     the administration of an Agile development process, conduct employee
      performance reviews, interview technical applicants, prioritize
      workloads, and set product strategy.
 
@@ -80,4 +80,4 @@ Internet Specialist                                                   Boston, MA
 
 
 
-                                                  [Fri Jul 25 14:09:42 EDT 2014]
+                                                  [Wed Sep 10 14:30:19 EDT 2014]

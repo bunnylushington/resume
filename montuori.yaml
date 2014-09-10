@@ -90,7 +90,7 @@ experience:
     work:
       - >
         Designed an IRC based Elixir front end for infrastructure and
-        operationas management including the build/release process,
+        operations management including the build/release process,
         server provisioning, and database management.
       - >
         Migrated two LAMP applications from a naive production-only,
@@ -148,7 +148,7 @@ experience:
         creation.
       - >
         Engaged with management peers to set technical direction,
-        assist in the administraiton of an Agile development process,
+        assist in the administration of an Agile development process,
         conduct employee performance reviews, interview technical
         applicants, prioritize workloads, and set product strategy.
       - >
@@ -192,7 +192,7 @@ experience:
         the University's highly available LDAP infrastructure;
         integrated Cosign SSO with on- and off-campus websites;
         integrated Moodle LMS authentication with Cosign (PHP);
-        directected an Apache and modperl v1 to v2 upgrade; automated
+        directed an Apache and modperl v1 to v2 upgrade; automated
         maintenance of third party software; deployed an OpenSSL CA;
         developed a Cisco VoIP employee punch clock; and mentored
         junior staff.
