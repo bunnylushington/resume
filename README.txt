@@ -3,7 +3,7 @@
                    2215 Burgundy St., New Orleans, LA, 70117
                      montuori@gmail.com --- (617) 398-7654
 
-Lectica, Inc. (Contract)                                 January 2014 -- Present
+Lectica, Inc. (Contract)                            January 2014 -- October 2014
 Technical Consultant                                   Northhampton, MA (Remote)
 
    * Designed an IRC based Elixir front end for infrastructure and
@@ -80,4 +80,4 @@ Internet Specialist                                                   Boston, MA
 
 
 
-                                                  [Wed Sep 10 14:30:19 EDT 2014]
+                                                  [Fri Dec 12 16:55:16 EST 2014]
