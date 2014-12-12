@@ -1,7 +1,7 @@
 ---
 format_options:
   basename: montuori
-  texpath: /usr/local/texlive/2013/bin/x86_64-darwin
+  texpath: /usr/local/texlive/2012/bin/x86_64-darwin
   startfrom: 1995-01-01
 
 name: Kevin Montuori
@@ -84,7 +84,7 @@ experience:
     shortname: Lectica
     location: Northhampton, MA (Remote)
     start-date: January 2014
-    end-date: Present
+    end-date: October 2014
     title: Technical Consultant
     showtech: yes
     work:
