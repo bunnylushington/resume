@@ -1,14 +1,13 @@
 ---
 format_options:
   basename: montuori
-  texpath: /usr/local/texlive/2012/bin/x86_64-darwin
+  texpath: /usr/local/bin
   startfrom: 1995-01-01
 
 name: Kevin Montuori
 address: 
-  - 33 Cornwall St., Jamaica Plain, MA, 02130
-  - 2215 Burgundy St., New Orleans, LA, 70117
-email: montuori@gmail.com
+  - Boston, MA and New Orleans, LA
+email: montuori@bapi.us
 telephone: (617) 398-7654
 
 links:
@@ -79,30 +78,73 @@ technology:
 
 experience:
 
+  - company: Brandeis University (Contract)
+    key: brandeis2
+    shortname: Brandeis
+    location: Waltham, MA (Remote)
+    start-date: January 2016
+    end-date: Present
+    title: Consultant
+    showtext: no
+    work:
+      - >
+        Upgraded a Perl Catalyst-based release engineering framework I
+        first developed for Brandeis in 2007.  The software has been
+        used daily for managing the build and release process for 190
+        software products since its initial deployment.  Although the
+        libraries being used -- Catalyst, DBIx::Class, Moose --
+        required an upgrade, the existing functionality and
+        methodology has proven sufficient for the client's needs.
+  
+  - company: Massachusetts Eye and Ear Institute (Contract)
+    key: MEEI
+    shortname: MEEI
+    location: Boston, MA (Remote)
+    start-date: November 2015
+    end-date: Present
+    title: Consultant
+    showtech: no
+    work:
+      - >
+        Developed a HIPAA compliant ETL and warehousing solution for
+        research data.  Work comprised writing custom API clients for
+        accessing data from legacy systems, developing extensible data
+        transformation rules, integration into existing LDAP/AD
+        systems, PostgreSQL schema design and administration, and a
+        web UI for managing data, users, and authorizations.
+
+  - company: Adya Consulting for Pearson (Contract)
+    key: adya
+    shortname: Adya
+    location: Boston, MA (Remote)
+    start-date: October 2015
+    end-date: Present
+    title: Consultant
+    showtech: no
+    work:
+      - >
+        Created a secure Erlang-based server to
+        receive, compile, and execute user-submitted code.
+        Responsible for architecture, API design, Docker
+        containerization, documentation, and all programming.
+  
   - company: Lectica, Inc. (Contract)
     key: lectica
     shortname: Lectica
     location: Northhampton, MA (Remote)
     start-date: January 2014
     end-date: October 2014
-    title: Technical Consultant
+    title: Consultant
     showtech: yes
     work:
       - >
-        Designed an IRC based Elixir front end for infrastructure and
-        operations management including the build/release process,
-        server provisioning, and database management.
-      - >
-        Migrated two LAMP applications from a naive production-only,
-        one-host infrastructure to a Salt managed dev-test-prod
-        deployment architecture; introduced Git VC, implemented MySQL
-        replication, migrated from Apache/modphp to nginx/php5-fpm.
-      - >
-        Built Salt recipes and modules for Digital Ocean VM
-        provisioning and configuration, Route53 DNS management, and
-        local Vagrant based developer environments; architected a
-        multi-consumer grains/pillars data environment; wrote custom
-        build and release code.
+        Migrated two LAMP applications from a production-only one-host
+        deployment to a SaltStack managed three environment,
+        multi-host infrastructure; introduced version control (Git),
+        implemented MySQL replication; migrated both applications from
+        Apache/modphp to nginx/php5-fpm; designed and programmed an
+        IRC based front end to manage server provisioning, database
+        management, and the build/release cycle.  
   
   - company: Ascend Learning (Contract)
     key: ascend
@@ -116,20 +158,24 @@ experience:
       - >
         Established an automated continuous integration and delivery
         pipeline for multiple software products employing Erlang,
-        Perl, Salt, AWS, and Jenkins.
-      - > 
-        Conceived and realized a one click EC2 provisioning system
-        employing SaltStack and a custom Erlang/Nitrogen web
-        application.
-      - > 
-        UNIX Administration: Configured and provided tools for an LDAP
-        directory responsible for providing UNIX account information
-        and sudo rules throughout the EC2 infrastructure; configured
-        an EBS backed NFS server; automated DNS configuration with
-        Route53; configured EC2 security groups; installed and managed
-        an ngIRCd server; wrote Salt SLSs and custom modules to
-        automate all EC2, RDS, ELB, and EBS provisioning and
-        configuration; managed APT packages.
+        Perl, SaltStack, AWS (EC2, EDS, ELB, EBS), and Jenkins.
+        Assumed all aspects of UNIX administration, LDAP directory
+        user and group management, one-click automated provisioning,
+        and DNS management (Route53).  
+
+      # - > 
+      #   Conceived and realized a one click EC2 provisioning system
+      #   employing SaltStack and a custom Erlang/Nitrogen web
+      #   application.
+      # - > 
+      #   UNIX Administration: Configured and provided tools for an LDAP
+      #   directory responsible for providing UNIX account information
+      #   and sudo rules throughout the EC2 infrastructure; configured
+      #   an EBS backed NFS server; automated DNS configuration with
+      #   Route53; configured EC2 security groups; installed and managed
+      #   an ngIRCd server; wrote Salt SLSs and custom modules to
+      #   automate all EC2, RDS, ELB, and EBS provisioning and
+      #   configuration; managed APT packages.
 
   - company: Pearson
     key: pearson
@@ -141,26 +187,26 @@ experience:
     showwork: yes
     work:
       - >
-        Recruited, managed, and mentored a team responsible for
-        continuous integration, zero downtime release, configuration
+        Recruited, managed, and lead a team responsible for continuous
+        integration, automated zero downtime release, configuration
         management, deployment architecture planning and
         configuration, developer support, and back office tools
         creation.
-      - >
-        Engaged with management peers to set technical direction,
-        assist in the administration of an Agile development process,
-        conduct employee performance reviews, interview technical
-        applicants, prioritize workloads, and set product strategy.
-      - >
-        Designed a fully automated continuous delivery release
-        process, developed and modified software to enforce that
-        process, and managed the release lifecycles of multiple
-        interdependent products during six half year product cycles.
-      - > 
-        Evolved a deployment architecture and application
-        configuration to support continuous product delivery,
-        migration to a services oriented architecture, and a twofold
-        increase in concurrent users.
+      # - >
+      #   Engaged with management peers to set technical direction,
+      #   assist in the administration of an Agile development process,
+      #   conduct employee performance reviews, interview technical
+      #   applicants, prioritize workloads, and set product strategy.
+      # - >
+      #   Designed a fully automated continuous delivery release
+      #   process, developed and modified software to enforce that
+      #   process, and managed the release lifecycles of numerous
+      #   interdependent products.
+      # - > 
+      #   Evolved a deployment architecture and application
+      #   configuration to support continuous product delivery,
+      #   migration to a services oriented architecture, and a twofold
+      #   increase in concurrent users.
 
       # - >
       #   Administered OpenLDAP, MySQL, nginx, Apache/modperl, CouchDB;
@@ -192,10 +238,7 @@ experience:
         the University's highly available LDAP infrastructure;
         integrated Cosign SSO with on- and off-campus websites;
         integrated Moodle LMS authentication with Cosign (PHP);
-        directed an Apache and modperl v1 to v2 upgrade; automated
-        maintenance of third party software; deployed an OpenSSL CA;
-        developed a Cisco VoIP employee punch clock; and mentored
-        junior staff.
+        directed an Apache and modperl v1 to v2 upgrade.
 
   - company: RiskMetrics Group
     key: rmg
@@ -211,7 +254,7 @@ experience:
         a toolkit of web-based and command-line tools to enable consistent,
         secure, and auditable product deployment, server configuration, LDAP
         Directory management, CVS and SVN repository maintenance, automated
-        stress testing, and unattended product builds.
+        stress testing, and unattended product builds.  
       - > 
         Liaised with the systems administration group to formulate
         deployment architectures and standards, develop customized
