@@ -78,23 +78,6 @@ technology:
 
 experience:
 
-  - company: Brandeis University (Contract)
-    key: brandeis2
-    shortname: Brandeis
-    location: Waltham, MA (Remote)
-    start-date: January 2016
-    end-date: Present
-    title: Consultant
-    showtext: no
-    work:
-      - >
-        Upgraded a Perl Catalyst-based release engineering framework I
-        first developed for Brandeis in 2007.  The software has been
-        used daily for managing the build and release process for 190
-        software products since its initial deployment.  Although the
-        libraries being used -- Catalyst, DBIx::Class, Moose --
-        required an upgrade, the existing functionality and
-        methodology has proven sufficient for the client's needs.
   
   - company: Massachusetts Eye and Ear Institute (Contract)
     key: MEEI
@@ -113,12 +96,31 @@ experience:
         systems, PostgreSQL schema design and administration, and a
         web UI for managing data, users, and authorizations.
 
+
+  - company: Brandeis University (Contract)
+    key: brandeis2
+    shortname: Brandeis
+    location: Waltham, MA (Remote)
+    start-date: January 2016
+    end-date: February 2016
+    title: Consultant
+    showtext: no
+    work:
+      - >
+        Upgraded a Perl Catalyst-based release engineering framework I
+        first developed for Brandeis in 2007.  The software has been
+        used daily for managing the build and release process for 190
+        software products since its initial deployment.  Although the
+        libraries being used -- Catalyst, DBIx::Class, Moose --
+        required an upgrade, the existing functionality and
+        methodology has proven sufficient for the client's needs.
+
   - company: Adya Consulting for Pearson (Contract)
     key: adya
     shortname: Adya
     location: Boston, MA (Remote)
     start-date: October 2015
-    end-date: Present
+    end-date: March 2016
     title: Consultant
     showtech: no
     work:
