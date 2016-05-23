@@ -2,17 +2,6 @@
                          Boston, MA and New Orleans, LA
                       montuori@bapi.us --- (617) 398-7654
 
-Brandeis University (Contract)                           January 2016 -- Present
-Consultant                                                  Waltham, MA (Remote)
-
-   * Upgraded a Perl Catalyst-based release engineering framework I first
-     developed for Brandeis in 2007. The software has been used daily for
-     managing the build and release process for 190 software products since
-     its initial deployment. Although the libraries being used -- Catalyst,
-     DBIx::Class, Moose -- required an upgrade, the existing functionality
-     and methodology has proven sufficient for the client's needs.
-
-
 Massachusetts Eye and Ear Institute (Contract)          November 2015 -- Present
 Consultant                                                   Boston, MA (Remote)
 
@@ -24,7 +13,18 @@ Consultant                                                   Boston, MA (Remote)
      authorizations.
 
 
-Adya Consulting for Pearson (Contract)                   October 2015 -- Present
+Brandeis University (Contract)                     January 2016 -- February 2016
+Consultant                                                  Waltham, MA (Remote)
+
+   * Upgraded a Perl Catalyst-based release engineering framework I first
+     developed for Brandeis in 2007. The software has been used daily for
+     managing the build and release process for 190 software products since
+     its initial deployment. Although the libraries being used -- Catalyst,
+     DBIx::Class, Moose -- required an upgrade, the existing functionality
+     and methodology has proven sufficient for the client's needs.
+
+
+Adya Consulting for Pearson (Contract)                October 2015 -- March 2016
 Consultant                                                   Boston, MA (Remote)
 
    * Created a secure Erlang-based server to receive, compile, and execute
@@ -80,4 +80,4 @@ Internet Specialist                                                   Boston, MA
 
 
 
-                                                  [Wed Feb  3 13:19:12 CST 2016]
+                                                  [Mon May 23 14:55:04 CDT 2016]
