@@ -78,6 +78,6 @@ __DATA__
 \font\headingfont=cmr10 at 14truept
 
 % -- macros.
-\def\entry#1{\parindent 5mm\item{--}{#1}\parindent 0pt}
+\def\entry#1{\parindent 5mm\item{}{#1}\parindent 0pt}
 \def\headerone#1#2{\leftline{{\bf #1} \hfill #2 }}
 \def\headertwo#1#2{\leftline{#1 \hfill #2 }}

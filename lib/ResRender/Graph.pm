@@ -41,13 +41,13 @@ sub render {
   my $data_file = "$output/../work/skills";
   open P, ">", $data_file;
 
-  say P "PlotArea = left:150 bottom:60 top:0 right:50";
-  say P "Alignbars = justify";
+  say P "PlotArea = left:200 bottom:60 top:0 right:60";
+#  say P "Alignbars = justify";
   say P "DateFormat = dd/mm/yyyy";
   say P "ImageSize = width:800 height:800";
-  say P "Period = from:01/01/1995 till:01/01/2015";
+  say P "Period = from:01/01/1995 till:01/06/2016";
   say P "TimeAxis = orientation:horizontal format:yyyy";
-  say P "ScaleMajor = increment:2 start:1995";
+  say P "ScaleMajor = increment:4 start:1995";
   say P "Fonts = \n  id:sans font:OpenSans-Regular";
   say P "Legend = orientation:vertical position:right";
 
@@ -131,8 +131,7 @@ sub make_date_hash {
   for my $e (experiences($data)) {
     $hash{key($e)} = { start   => start_to_js(startdate($e)),
                        end     => end_to_js(enddate($e)),
-                       company => company($e),
-                       label   => shortname($e) }
+                       company => company($e)}
   }
   return \%hash;
 }
