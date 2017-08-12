@@ -2,7 +2,7 @@
                          Boston, MA and New Orleans, LA
                       montuori@bapi.us --- (617) 398-7654
 
-Massachusetts Eye and Ear Institute (Contract)          November 2015 -- Present
+Massachusetts Eye and Ear (Contract)                    November 2015 -- Present
 Consultant                                                   Boston, MA (Remote)
 
    * Developed a HIPAA compliant ETL and warehousing solution for research
@@ -80,4 +80,4 @@ Internet Specialist                                                   Boston, MA
 
 
 
-                                                  [Mon May 23 14:55:04 CDT 2016]
+                                                  [Sat Aug 12 05:46:11 EDT 2017]
