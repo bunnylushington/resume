@@ -1,8 +1,8 @@
                                  Kevin Montuori
-                         Boston, MA and New Orleans, LA
+                                New Orleans, LA
                       montuori@bapi.us --- (617) 398-7654
 
-Massachusetts Eye and Ear (Contract)                    November 2015 -- Present
+Massachusetts Eye and Ear Institute (Contract)          November 2015 -- Present
 Consultant                                                   Boston, MA (Remote)
 
    * Developed a HIPAA compliant ETL and warehousing solution for research
@@ -16,12 +16,8 @@ Consultant                                                   Boston, MA (Remote)
 Brandeis University (Contract)                     January 2016 -- February 2016
 Consultant                                                  Waltham, MA (Remote)
 
-   * Upgraded a Perl Catalyst-based release engineering framework I first
-     developed for Brandeis in 2007. The software has been used daily for
-     managing the build and release process for 190 software products since
-     its initial deployment. Although the libraries being used -- Catalyst,
-     DBIx::Class, Moose -- required an upgrade, the existing functionality
-     and methodology has proven sufficient for the client's needs.
+   * Provided an upgrade and maintainance of an automated release
+     management framework originally written for Brandeis in 2007.
 
 
 Adya Consulting for Pearson (Contract)                October 2015 -- March 2016
@@ -80,4 +76,4 @@ Internet Specialist                                                   Boston, MA
 
 
 
-                                                  [Sat Aug 12 05:46:11 EDT 2017]
+                                                  [Mon Feb 19 12:43:07 CST 2018]
