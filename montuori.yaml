@@ -6,7 +6,7 @@ format_options:
 
 name: Kevin Montuori
 address: 
-  - Boston, MA and New Orleans, LA
+  - New Orleans, LA
 email: montuori@bapi.us
 telephone: (617) 398-7654
 
@@ -107,13 +107,8 @@ experience:
     showtext: no
     work:
       - >
-        Upgraded a Perl Catalyst-based release engineering framework I
-        first developed for Brandeis in 2007.  The software has been
-        used daily for managing the build and release process for 190
-        software products since its initial deployment.  Although the
-        libraries being used -- Catalyst, DBIx::Class, Moose --
-        required an upgrade, the existing functionality and
-        methodology has proven sufficient for the client's needs.
+        Provided an upgrade and maintainance of an automated release
+        management framework originally written for Brandeis in 2007.
 
   - company: Adya Consulting for Pearson (Contract)
     key: adya
