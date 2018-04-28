@@ -90,12 +90,14 @@ experience:
     work:
       - >
         Developed a HIPAA compliant ETL and warehousing solution for
-        research data.  Work comprised writing custom API clients for
-        accessing data from legacy systems, developing extensible data
-        transformation rules, integration into existing LDAP/AD
-        systems, PostgreSQL schema design and administration, and a
-        web UI for managing data, users, and authorizations.
+        managing research data.  Technology employed included Erlang,
+        PostgreSQL, Bootstrap, LDAP/AD, and Docker.
 
+      - >
+        Implemented Salt configuration management, performed routine
+        Linux systems administration, developed an extensible ETL
+        utility for processing treatment outcome data, automated
+        creation of new outcome data collection sites.
 
   - company: Brandeis University (Contract)
     key: brandeis2
@@ -120,10 +122,10 @@ experience:
     showtech: no
     work:
       - >
-        Created a secure Erlang-based server to
-        receive, compile, and execute user-submitted code.
-        Responsible for architecture, API design, Docker
-        containerization, documentation, and all programming.
+        Created a secure Erlang server to receive, compile, and
+        execute user-submitted code.  Responsible for architecture,
+        API design, Docker containerization, documentation, and all
+        programming.
   
   - company: Lectica, Inc. (Contract)
     key: lectica
@@ -136,12 +138,12 @@ experience:
     work:
       - >
         Migrated two LAMP applications from a production-only one-host
-        deployment to a SaltStack managed three environment,
-        multi-host infrastructure; introduced version control (Git),
-        implemented MySQL replication; migrated both applications from
+        deployment to a Salt managed three environment, multi-host
+        infrastructure; introduced version control (Git), implemented
+        MySQL replication; migrated both applications from
         Apache/modphp to nginx/php5-fpm; designed and programmed an
         IRC based front end to manage server provisioning, database
-        management, and the build/release cycle.  
+        management, and the build/release cycle.
   
   - company: Ascend Learning (Contract)
     key: ascend
@@ -155,10 +157,10 @@ experience:
       - >
         Established an automated continuous integration and delivery
         pipeline for multiple software products employing Erlang,
-        Perl, SaltStack, AWS (EC2, EDS, ELB, EBS), and Jenkins.
-        Assumed all aspects of UNIX administration, LDAP directory
-        user and group management, one-click automated provisioning,
-        and DNS management (Route53).  
+        Perl, Salt, AWS (EC2, EDS, ELB, EBS), and Jenkins.  Assumed
+        all aspects of UNIX administration, LDAP directory user and
+        group management, one-click automated provisioning, and DNS
+        management (Route53).
 
       # - > 
       #   Conceived and realized a one click EC2 provisioning system
