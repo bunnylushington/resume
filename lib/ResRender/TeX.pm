@@ -48,12 +48,13 @@ sub experience {
     say $fh "\\headerone{$company}{$dates}";
     say $fh "\\headertwo{$title}{$location}";
     if (showwork($e)) {
+      say $fh "\\smallskip";
       say $fh "\\entry{$_}\\smallskip" for work($e);
     }
     say $fh "\\medskip";
   }
 }
-  
+
 sub AUTOLOAD {
   my $text = shift;
   my $pkg = __PACKAGE__;
@@ -74,7 +75,7 @@ __DATA__
 
 % -- fonts.
 \font\smallheadfont=cmr10 at 10truept
-\font\largeheadfont=cmr10 at 20.74truept 
+\font\largeheadfont=cmr10 at 20.74truept
 \font\headingfont=cmr10 at 14truept
 
 % -- macros.

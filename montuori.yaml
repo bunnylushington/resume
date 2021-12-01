@@ -5,7 +5,7 @@ format_options:
   startfrom: 1995-01-01
 
 name: Kevin Montuori
-address: 
+address:
   - New Orleans, LA
 email: montuori@bapi.us
 telephone: (617) 398-7654
@@ -14,7 +14,7 @@ links:
   - GitHub: https://github.com/kevinmontuori
   - LinkedIn: http://linkedin.com/in/montuori
 
-technology: 
+technology:
   - Language:
       - Perl: lectica, ascend, pearson, brandeis, rmg, nu2, jh, nu1
       - Emacs-Lisp: ascend, pearson, brandeis, rmg, nu2, jh, nu1
@@ -35,7 +35,7 @@ technology:
       - Jira Console/API: pearson
       - PeopleSoft Webservices API: brandeis
       - Cisco VoIP API: brandeis
-  - Software: 
+  - Software:
       - make: ascend, pearson, brandeis, rmg
       - Jenkins: ascend
       - Salt: ascend, lectica
@@ -78,26 +78,26 @@ technology:
 
 experience:
 
-  
-  - company: Massachusetts Eye and Ear (Contract)
+
+  - company: Massachusetts Eye and Ear / Mass General Brigham
     key: MEEI
     shortname: MEEI
     location: Boston, MA (Remote)
     start-date: November 2015
     end-date: Present
-    title: Consultant
+    title: Systems and Database Programmer
     showtech: no
     work:
       - >
-        Developed a HIPAA compliant ETL and warehousing solution for
+        Developed HIPAA compliant ETL and warehousing solutions for
         managing research data.  Technology employed included Erlang,
         PostgreSQL, Bootstrap, LDAP/AD, and Docker.
 
       - >
         Implemented Salt configuration management, performed routine
-        Linux systems administration, developed an extensible ETL
-        utility for processing treatment outcome data, automated
-        creation of new outcome data collection sites.
+        Linux systems and Docker Swarm administration, developed an
+        extensible ETL utility for processing treatment outcome data,
+        automated creation of new outcome data collection sites.
 
   - company: Brandeis University (Contract)
     key: brandeis2
@@ -126,7 +126,7 @@ experience:
         execute user-submitted code.  Responsible for architecture,
         API design, Docker containerization, documentation, and all
         programming.
-  
+
   - company: Lectica, Inc. (Contract)
     key: lectica
     shortname: Lectica
@@ -144,7 +144,7 @@ experience:
         Apache/modphp to nginx/php5-fpm; designed and programmed an
         IRC based front end to manage server provisioning, database
         management, and the build/release cycle.
-  
+
   - company: Ascend Learning (Contract)
     key: ascend
     shortname: Ascend
@@ -162,11 +162,11 @@ experience:
         group management, one-click automated provisioning, and DNS
         management (Route53).
 
-      # - > 
+      # - >
       #   Conceived and realized a one click EC2 provisioning system
       #   employing SaltStack and a custom Erlang/Nitrogen web
       #   application.
-      # - > 
+      # - >
       #   UNIX Administration: Configured and provided tools for an LDAP
       #   directory responsible for providing UNIX account information
       #   and sudo rules throughout the EC2 infrastructure; configured
@@ -201,7 +201,7 @@ experience:
       #   process, developed and modified software to enforce that
       #   process, and managed the release lifecycles of numerous
       #   interdependent products.
-      # - > 
+      # - >
       #   Evolved a deployment architecture and application
       #   configuration to support continuous product delivery,
       #   migration to a services oriented architecture, and a twofold
@@ -239,7 +239,7 @@ experience:
         integrated Moodle LMS authentication with Cosign (PHP);
         directed an Apache and modperl v1 to v2 upgrade.
 
-  - company: RiskMetrics Group
+  - company: JP Morgan Chase / RiskMetrics Group
     key: rmg
     shortname: RMG
     location: Cambridge, MA
@@ -248,13 +248,13 @@ experience:
     title: Senior Release Engineer and Systems Programmer
     showwork: no
     work:
-      - > 
+      - >
         Developed a best practices release management methodology supported by
         a toolkit of web-based and command-line tools to enable consistent,
         secure, and auditable product deployment, server configuration, LDAP
         Directory management, CVS and SVN repository maintenance, automated
-        stress testing, and unattended product builds.  
-      - > 
+        stress testing, and unattended product builds.
+      - >
         Liaised with the systems administration group to formulate
         deployment architectures and standards, develop customized
         software packages, assist in the automation of server builds,
@@ -283,11 +283,11 @@ experience:
     end-date: May 1999
     title: Internet Commerce Application Designer
     showwork: no
-    work: 
+    work:
       - >
         Co-developed and deployed John Hancock's interactive website;
         architected and implemented numerous Casie award winning financial and
-        insurance applications; developed UNIX tools to aid release management 
+        insurance applications; developed UNIX tools to aid release management
         and infrastructure maintenance; configured and maintained a
         highly available electronic commerce infrastructure.
 
@@ -305,9 +305,3 @@ experience:
         interactive web presence in May 1995; performed analysis and
         programming for continued site growth; and provided technical
         and customer support.
-  
-
-
-  
-
-
